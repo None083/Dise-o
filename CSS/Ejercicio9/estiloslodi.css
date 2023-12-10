@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+
+/*VERSIÓN DE MÓVIL*/
+div#contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header > nav#menu-principal {
+    display: flex;
+    flex-flow: column;
+    order:1;
+    flex: 25%;
+}
+header > nav#menu-principal > label:hover{
+    cursor: pointer;
+}
+header > nav#menu-principal > input#menu-hamburger {
+    display: none;
+}
+
+header > nav#menu-principal > ul#menu {
+    display: none;
+}
+header > nav#menu-principal > ul#menu > li{
+    padding: 0.5rem;
+}
+header > nav#menu-principal > input#menu-hamburger:checked + ul#menu {
+    display:flex;
+    flex-flow: column;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    background-color: aliceblue;
+    padding: 1rem;
+    width: 50%;
+}
+
+header > nav#menu-principal > label > span{
+    font-size: 1.5rem;
+}
+
+header > nav#buscador {
+    order: 2;
+    flex: 17.5%;
+    text-align: center;
+}
+
+header > nav#buscador > ul {
+    list-style-type: none;
+}
+
+header > nav#buscador > ul > li > a{
+    color: gray;
+}
+
+header > picture{
+    order: 3;
+    flex: 30%;
+}
+
+header > picture > img#logo{
+    width: 6.3rem;
+    height: auto;
+}
+
+header > nav#compra {
+    order: 4;
+    flex: 17.5%;
+    text-align: end;
+}
+
+
+header > nav#compra > ul > li > a{
+    color: gray;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main > article.item {
+    display: flex;
+    flex-direction: column;
+    
+    flex:0 50%;
+    padding: 1rem;
+}
+
+main > article.item > p {
+    order: 2;
+    text-align: center;
+    margin-top: 0;
+}
+
+main > article.item > a {
+    color: black;
+    text-decoration: none;
+}
+
+main > article.item > a:nth-child(1) {
+    order: 1;
+    text-align: center;
+}
+main > article.item > a:nth-child(3) img{
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > nav#menu-adicional > ul {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+}
+
+footer > nav#menu-adicional > ul > li {
+    border-bottom: 1px solid lightgray;
+    padding: 0.5rem auto;
+}
+
+footer > nav#menu-adicional > ul > li > a {
+    font-size: small;
+}
+
+footer > nav#iconos-sociales {
+    padding-top: 1rem;
+    margin: auto;
+}
+
+footer > nav#iconos-sociales > ul {
+    display: flex;
+}
+
+footer > nav#iconos-sociales > ul > li > a {
+    color: gray;
+    padding: 0.4rem;
+}
+footer > nav#iconos-sociales > ul > li i {
+    font-size: 2rem;
+
+}

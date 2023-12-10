@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <form action="https://educacionadistancia.juntadeandalucia.es/centros/malaga/pluginfile.php/818801/assignsubmission_file/submission_files/179973/ejer5.html" method="post">
+        <input autofocus type="radio" name="sexo" id="sr" value="sr">
+        <label for="sr">Sr.</label>
+        <input type="radio" name="sexo" id="sra" value="sra">
+        <label for="sra">Sra.</label>
+
+        <input type="text" name="nombre" id="nombre" aria-label="nombre/razon social"
+            placeholder="Nombre / Razón Social" title="Indique el nombre o Razón Social">
+        <input type="text" name="apellidos" id="apellidos" aria-label="apellidos" placeholder="Apellidos*"
+            title="apellidos" maxlength="35" required>
+        <input type="email" name="email" id="email" placeholder="Email*" aria-label="Introduce tu e-mail:"
+            title="E-mail" required>
+        <input type="password" name="password" id="password" placeholder="Contraseña"
+            aria-label="Introduce tu contraseña:"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$"
+            title="Indique su contraseña" required>
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha" min="1950-01-01" max="2023-01-01">
+        <input type="text" id="dni" name="dni" title="Indique su DNI" placeholder="DNI/NIF/NIE*">
+        <input type="text" id="direccion" name="direccion" title="Indique su dirección" placeholder="DIRECCIÓN*">
+        <input type="text" id="cp" name="cp" title="Indique su código postal" placeholder="CODIGO POSTAL*">
+        <select name="pais" id="pais" title="Indique el pais" aria-label="pais">
+            <option value="malaga">Málaga</option>
+            <option value="malaga">Álava</option>
+            <option value="malaga">Bilbao</option>
+        </select>
+        <input type="tel" name="tel" id="tel" placeholder="Teléfono móvil*" pattern="[0-9]{9}">
+        <input type="checkbox" name="check" id="check">
+        <label for="check">Estos datos personales se usarán para responder a sus busquedas, procesar sus pedidos o autorizar el acceso</label>
+        <button name="boton" id="boton">Registrarse</button>
+            
+    </form>
+</body>
+
+</html>

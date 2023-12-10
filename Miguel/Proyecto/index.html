@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="jq/jquery-3.3.1.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="jq/script-ChefCrew.js"></script>
+    <title>ChefCrew</title>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <nav id="menuPrincipal">
+                <h1>Chef Crew Pagina de recetas</h1>
+                <img src="img/menu.svg" alt="menu principal" id="menu-principal" >
+                <ul>
+                    <li id="cabeceraMenu"><img src="img/logoMenu.svg" alt="logo menu">Menu <img class="xmenu" src="img/x.svg" alt="cerrar menu"></li>
+                    <li><a  href="portada.html">Portada</a></li>
+                    <li><a href="portada.html">¿Qué comer hoy?</a></li>
+                    <li><a href="portada.html">veganos</a></li>
+                    <li><a href="portada.html">Comida asiatica</a></li>
+                    <li><a href="portada.html">Postres</a></li>
+                    <li><a href="portada.html">Cocteles</a></li>
+                    <li><a href="portada.html">Ensaladas</a></li>
+                </ul>
+            </nav>
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.svg" alt="logo" id="imglogo" >
+                <span>CHEF CREW</span>
+                </a>
+            </div>
+        <nav id="login">
+            <img src="img/user.svg" alt="login"  id="btnlogin">
+            
+            <ul>
+                <li id="cabeceraMenuLogin"><img src="img/logoMenu.svg" alt="logo menu"> Cerrar <img class="xmenu" src="img/x.svg" alt="cerrar menu"></li>
+                <li id="perfil">Perfil</li>
+                <li><a href="subir_receta.html">Subir receta</a></li>
+                <li><a href="portada.html">Mis recetas</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <nav id="cabeceraMain">
+                
+                <a href="portada.html">Portada</a>
+                <a href="portada.html"> ¿Qué comer hoy?</a>
+                <a href="portada.html"> Mas visto</a>
+                
+            </nav>
+            <img src="img/resto&bar.png" id="logoPrincipal" alt="logo principal">
+            <div id="divbusqueda">
+                <label for="busqueda">
+                <img src="img/search.svg" alt="lupa">
+                <input type="text" placeholder="Busca una receta" id="busqueda">
+                </label>
+            </div>
+            </main>
+        <footer>
+            <nav id="redes"> <a href=""><img src="img/instagram.svg" alt="instagram"></a>
+                 <a href="https://twitter.com/"><img src="img/twitter.svg" alt="twitter" ></a>
+                  <a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook" ></a></nav>
+            <nav id="terminos"><a href="terminos.html">Terminos de uso</a> | <a href="terminos.html">Política de privacidad</a> | <a href="terminos.html">Política de cookies</a></nav>
+            <span id="derechos">© 2022 Chef Crew- Todos los derechos reservados</span>
+        </footer>
+    </div>
+    
+    <div id="ventanalogin">
+       <img src="img/x.svg" alt="cerrar login" class="xlogin" >
+        <img src="img/conectwithg.png" alt="conectar con google">
+        <span>or</span>
+        <nav>
+            <label for="email"><input type="text" placeholder="Email" id="email" ></label>
+            <label for="password"><input type="password" placeholder="Password" id="password" ></label>
+            <button>Log in</button>
+        </nav>
+        <a href="index.html">Use single sing-on</a>
+        <a href="index.html">Resset password</a>
+        <span>No account? <a href="index.html">Create one</a></span>
+        
+    </div>
+    <div id="video">
+        <div><video id="videoo" width="300">
+                <source src="video/video.mp4" type="video/mp4" >
+
+            </video>
+        </div>
+        <div>
+            <span id="tiempoactual"></span> / <span id="tiempototal"></span>
+            <input type="range" id="barrita" value="0" max="100">
+        </div>
+        <div id="botones">
+            <div id="izq">
+            <button id="play" class="visible">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 4v16l13 -8z"></path>
+                </svg>
+            </button>
+            <button id="pause" class="oculto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-pause" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <rect x="6" y="5" width="4" height="14" rx="1"></rect>
+                    <rect x="14" y="5" width="4" height="14" rx="1"></rect>
+                </svg>
+            </button>
+            <button id="stop"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-stop"
+                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <rect x="5" y="5" width="14" height="14" rx="2"></rect>
+                </svg>
+            </button>
+            <button id="reiniciar">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rotate-clockwise" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4.05 11a8 8 0 1 1 .5 4m-.5 5v-5h5"></path>
+                </svg>
+            </button>
+
+
+            <button id="muted" class="visible btnvol">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M15 8a5 5 0 0 1 0 8"></path>
+                    <path d="M17.7 5a9 9 0 0 1 0 14"></path>
+                    <path
+                        d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5">
+                    </path>
+                </svg>
+
+            </button>
+            <button id="desmutear" class="oculto btnvol">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume-off" width="24"
+                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M15 8a5 5 0 0 1 1.912 4.934m-1.377 2.602a5.001 5.001 0 0 1 -.535 .464"></path>
+                    <path d="M17.7 5a9 9 0 0 1 2.362 11.086m-1.676 2.299a9.005 9.005 0 0 1 -.686 .615"></path>
+                    <path
+                        d="M9.069 5.054l.431 -.554a0.8 .8 0 0 1 1.5 .5v2m0 4v8a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l1.294 -1.664">
+                    </path>
+                    <path d="M3 3l18 18"></path>
+                </svg>
+            </button>
+            <input type="range" id="volumen" value="100" min="0" max="100" >
+            </div>
+            <div id="der">
+                <button id="atras">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-track-prev-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M21 5v14l-8 -7z" fill="currentColor"></path>
+                        <path d="M10 5v14l-8 -7z" fill="currentColor"></path>
+                     </svg>
+                </button>
+                <button id="adelantar">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-track-next-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 5v14l8 -7z" fill="currentColor"></path>
+                        <path d="M14 5v14l8 -7z" fill="currentColor"></path>
+                     </svg>
+                </button>
+                <button id="frenar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-10" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                    <path d="M12 12l-3 -2"></path>
+                    <path d="M12 7v5"></path>
+                 </svg></button>
+                <button id="acelerar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                    <path d="M12 12l3 -2"></path>
+                    <path d="M12 7v5"></path>
+                 </svg></button>
+            <button id="fullscreen"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-maximize" width="24" height="24" viewBox="0 0 24 24"
+                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
+                    <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
+                    <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
+                    <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
+                </svg></button>
+            
+            </div>
+        </div>
+    </div>
+    <div id="volverarriba"><a href="#top">VOLVER ARRIBA <span><i class="fa fa-sort-asc"
+        aria-hidden="true"></i></span></a></div>
+</body>
+
+</html>

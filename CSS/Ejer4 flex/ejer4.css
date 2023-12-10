@@ -1,0 +1,47 @@
+div#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: baseline;
+    width: 20em;
+    background-color: white;
+}
+
+#formulario input,
+#formulario select,
+#formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+}
+
+span.bold{
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+div#autorizo {
+    width: 20em;
+}
+
+button {
+    background-color: black;
+    color: burlywood;
+    border-radius: 10em;
+    width: 12em;
+    padding: 1em;
+    border: none;
+    font-style: bold;
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: darkgrey;
+    color: white;
+}

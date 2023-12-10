@@ -1,0 +1,457 @@
+html{box-sizing: border-box;}
+*{margin:0; padding: 0; box-sizing: inherit;}
+#content{
+display: flex;
+flex-flow: column;
+position: relative;
+min-height: 100vh;
+background-color: #F4F4F4;
+}body{
+width: 100%;
+
+}
+h1{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    height: 8rem;
+}
+header img{
+    fill: white;
+    color:white;
+}
+#logo a{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+}
+#imglogo{
+    width: 70px;
+    height: auto;
+}
+header>nav{
+    margin:2rem;
+}
+header>h1{
+    display: none;
+}
+
+header>nav#menuPrincipal>ul{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: 3px solid #F05F30;
+    width: 15rem;
+    display: none;
+
+}
+header>nav>ul li{
+    border-bottom:2px solid #A84322;
+    font-size: 1.5rem;
+    position: relative;
+}
+header>nav>ul li>a{
+    color:#A84322;
+}
+
+.xmenu{
+    width:20px;
+    height: 35px;
+    position: absolute;
+    left: 80%;
+    bottom: 20%;
+    
+}
+
+
+header>nav#login>ul{
+    position: absolute;
+    right: 2px;
+    top:0;
+    background-color: white;
+    border: 3px solid #F05F30;
+    width: 15rem;
+    display: none;
+    color:#A84322;
+}
+header>nav#login>ul>li#perfil{
+   cursor: pointer;
+}
+
+#cabeceraMenu img,#cabeceraMenuLogin img {
+    width: 50px;
+}
+footer{
+    display: flex;
+    flex-flow: column;
+    background-color: #1c1c1c;
+    color:white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+}
+footer a{
+    color:white;
+}
+footer nav#redes{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+footer nav#terminos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 50%;
+    margin:auto;
+}
+footer span{
+    text-align: center;
+    width: 50%;
+    margin:auto;
+}
+/*--------------------------------------------------------*/
+main{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    background-color: #F4F4F4;
+    padding-bottom: 10rem;
+    color: black;
+    
+}
+main>nav#cabeceraMain{
+    background-color:#f58f6e;
+    display: flex;
+    justify-content: space-around;
+    height: 3em;
+    align-items: center;
+    width: 100%;
+}
+
+
+main>nav#cabeceraMain a{
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main>nav#cabeceraMain nav{
+
+    background-color: white;
+    border-radius: 1rem;
+    width: 14rem;
+}
+main>nav#cabeceraMain nav input{
+    border: none;
+    
+}
+main>img#logoPrincipal{
+    width: 400px;
+    height: auto;
+    margin:auto;
+}
+main>div#divbusqueda{
+    margin:auto;
+    background-color: white;
+    border-radius: 2rem;
+    width: 80%;
+    border: 2px solid #F05F30;
+    
+    
+}
+main>div#divbusqueda input{
+    width: 85%;
+    height: 3.5rem;
+    border: none;
+    font-size: x-large;
+    text-align: center;
+}
+main div input::placeholder{
+    color: #F05F30;
+    
+}
+main>h2{
+    text-align: center;
+    width: 100%;
+    color: #1C1C1C;
+}
+main div#recetas{
+    display: flex;
+    flex-flow: column nowrap;
+}
+main>div#termino>p{
+margin:1rem;
+text-align: justify;
+}
+article{
+    display: flex;
+    flex-flow: column;
+    border:2px solid black;
+    margin:10px;
+}
+article h2{
+    display: none;
+}
+article>nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5rem;
+}
+article>nav>span{
+    font-size: large;
+    margin-right:30% ;
+    color: black;
+}main>div#subir_receta{
+    text-align: center;
+}
+main>div#subir_receta form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:flex-start;
+}
+main>div#subir_receta input{
+    width: 90%;
+    margin: 1rem;
+    color:black;
+    border: #F58F6E 1px solid;
+}
+main>div#subir_receta input::placeholder{
+    color: black;
+}
+main>div#subir_receta textarea{
+    width: 90%;
+    margin: 1rem;
+    color:black;
+    border: #F58F6E 1px solid;
+    height: 4rem;
+}
+main>div#subir_receta button{
+    background-color: grey;
+    margin-left: 10%;
+    padding: 0.5rem;
+}
+
+
+
+
+#ventanalogin{
+    display: none;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    top:15rem;
+    left: 0;
+    width: 30rem;
+    right: 1rem;
+  
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+div#ventanalogin>*{
+    margin:0.5rem 0;
+}
+div#ventanalogin>nav{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: 100%;
+}
+.xlogin{
+    align-self:flex-end;
+}
+div#ventanalogin>nav label{
+    margin: 1rem auto;
+    width: 100%;
+    width: 70%;
+}
+div#ventanalogin>nav input{
+
+    border: 3px solid blue;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 100%;
+}
+div#ventanalogin>nav button{
+    background-color: black;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 70%;
+    color: white;
+}
+div#ventanalogin span{
+    color:black;
+}
+
+
+
+
+.oculto{
+    display: none;
+}
+.visible{
+    display: block;
+}
+#video{
+    display: flex;
+    flex-flow: column ;
+    align-items: flex-start;
+    background-color: #1C1C1C;
+    padding: 10px;
+    width: fit-content;
+    position: absolute;
+    bottom:32.5rem;
+
+}
+svg{
+ width: 15px;
+ height: auto;
+ color: #F58F6E;
+}
+button{
+    background-color:#1C1C1C;
+}
+body{
+    color:white
+}
+#botones{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#barrita{
+    width: 270px;
+}
+#der{
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+#izq{
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+#receta{
+    display: none;
+    flex-flow: column nowrap;
+    width: 80%;
+    margin-left: 10%;
+    position: absolute;
+    top:15rem;
+    background-color: white;
+    border: 1px solid #A84322;
+    color: black;
+    align-items: center;
+}
+#receta img{ 
+width: 80%;
+height: auto;
+}
+#receta>div#texto{
+    display: flex;
+    flex-flow: column nowrap;
+}
+#receta>div#circulos{
+    margin: 10px 0;
+}
+#receta>div#circulos>span{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin:20px 5px;
+    padding: 5px;
+}
+#receta>#cerrarReceta{
+    width: 20px;
+    height: auto;
+    align-self: self-end;
+}
+div#volverarriba{
+	color:#454545;
+	font-family: 'Open Sans Condensed', sans-serif;
+	width: 8rem;
+	background-color: lightgrey;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	position: fixed;
+	opacity: 0.7;
+	display:none;
+}
+div#volverarriba > a{
+	display: flex;
+	justify-content: space-between;
+	border:1px solid grey;
+	padding: 0.2rem 1rem;
+}
+.fija {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background-color: white;
+	}
+@media all and (min-width:800px){
+    main div#recetas{
+        flex-flow: row wrap;
+    }
+    main>div>article{
+        width: 40%;
+        margin: 10px auto;
+    }
+    
+    #ventanalogin{
+        left: 35%;
+    }
+    main>div#subir_receta>form{
+    align-items: center;
+    }
+    main>div#subir_receta input{
+        width: 40rem;
+
+    }
+    main>div#subir_receta textarea{
+        width: 40rem;
+
+    }
+    main>div#subir_receta button{
+        margin:0;
+    }
+}
+@media all and (min-width:1400px){
+    main div#recetass{
+        flex-flow: row wrap;
+    }
+    main>div>article{
+        width: 30%;
+        margin: 10px auto;
+    }
+    #video{
+        display: block;
+    }
+
+}

@@ -1,0 +1,141 @@
+tengo este código html:
+
+<body>
+	<div id="content">
+		<header>
+			<img src="logo.png" alt="logotipo de la empresa" width="140" height="122" id="logo">
+			<h1>DISEÑO WEB <span id="subject">APLIWEB</span></h1>
+		</header>
+		<nav id="main-menu">
+			<label for="hamburger">
+				<span title="Mobile Menu">&#9776;</span>
+			</label>  
+			<input type="checkbox" id="hamburger"/>
+			<ul>
+				<li><a href="item1.html">ITEM MENÚ 1</a></li>
+				<li><a href="item2.html">ITEM MENÚ 2</a></li>
+				<li><a href="item3.html">ITEM MENÚ 3</a></li>
+				<li><a href="item4.html">ITEM MENÚ 4</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section id="principal">
+				<h2>TÍTULO DE LA SECCIÓN PRINCIPAL</h2>
+				<article id="primerElemento" class="news-art">
+					<h3><a href="art1.html">TÍTULO DEL ARTÍCULO 1</a></h3>
+					<img src="img-art1.png" alt="Imagen artículo 1" width="512" height="512">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus vestibulum luctus. Fusce faucibus nunc in augue accumsan, nec ultrices quam fringilla. Cras id faucibus mauris. Suspendisse vehicula gravida eros, ac dapibus leo. Phasellus sit amet diam accumsan, porta velit vulputate, consectetur mi. Suspendisse metus erat, pretium nec efficitur vel, imperdiet at lectus.</p>
+				</article>
+				<article class="news-art">
+					<h3><a href="art2.html">TÍTULO DEL ARTÍCULO 2</a></h3>
+					<img src="img-art2.png" alt="Imagen artículo 2" width="512" height="512">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus vestibulum luctus. Fusce faucibus nunc in augue accumsan, nec ultrices quam fringilla. Cras id faucibus mauris. Suspendisse vehicula gravida eros, ac dapibus leo. Phasellus sit amet diam accumsan, porta velit vulputate, consectetur mi. Suspendisse metus erat, pretium nec efficitur vel, imperdiet at lectus.</p>
+				</article>
+				<article class="news-art">
+					<h3><a href="art3.html">TÍTULO DEL ARTÍCULO 3</a></h3>
+					<img src="img-art3.png" alt="Imagen artículo 3" width="512" height="512">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus vestibulum luctus. Fusce faucibus nunc in augue accumsan, nec ultrices quam fringilla. Cras id faucibus mauris. Suspendisse vehicula gravida eros, ac dapibus leo. Phasellus sit amet diam accumsan, porta velit vulputate, consectetur mi. Suspendisse metus erat, pretium nec efficitur vel, imperdiet at lectus.</p>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<small>Este es el pie de página de la página web del ejercicio</small>
+		</footer>
+	</div>
+	</body>
+
+y necesito completar el código css que añado más abajo para que los estilos queden mobile-first, los elementos en columna y centrados y flexibles, como en la foto adjunta.
+
+*{box-sizing: border-box;}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+}
+
+header, footer{
+  background-color: #e6e7e8;
+  border: 2px solid #3f3f3f;
+  border-radius: 5px;
+}
+
+footer{
+  color: #3f3f3f;
+  height: 2rem;
+}
+
+header img#logo{
+  width: 5rem;
+  height: 4.35rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Bree Serif', serif;
+  color: #00acdd;
+}
+
+header h1{
+  color: #004166;
+  font-weight: bold;
+}
+
+header h1 span#subject{
+  color: #96bc33;
+}
+
+a{
+  text-decoration: none;
+  cursor:pointer;
+}
+
+a:link{
+  color: #00acdd;
+}
+
+a:visited{
+  color: #ea2126;
+}
+
+a:hover{
+  cursor: pointer;
+  color: #f58a1e;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+nav ul{
+	padding-left: 0;
+}
+
+nav#main-menu{
+  background-color: #004166;
+  font-weight: bold;
+  border: 2px solid #e6e7e8;
+  border-radius: 5px;
+}
+
+main section#principal{
+  border: 2px solid #004166;
+  border-radius: 5px;
+}
+
+main section article.news-art{
+  border: 5px solid #e6e7e8;
+  border-radius: 0.8rem;
+}
+div#content main section#principal article#primerElemento{
+  background-color: #e6e7e8;
+  border-color: #f58a1e;
+}
+
+div#content main section article.news-art img{
+  width: 20rem;
+  height: auto;
+}
+
+div#content main section article.news-art p{
+  padding: 0 1rem;
+}

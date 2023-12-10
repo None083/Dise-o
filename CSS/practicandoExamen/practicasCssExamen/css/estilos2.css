@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div#content{
+    display: flex;
+    flex-flow: column;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+}
+
+header > nav#main-menu > input[type="checkbox"],
+header > nav#main-menu > div#menu-toggle{
+    display: none;
+}
+
+header > nav#main-menu > input:checked ~ div#menu-toggle{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+}
+
+header > nav#main-menu > input:checked ~ div#menu-toggle > ul#op-idiomas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    text-decoration: underline;
+}
+
+header > nav#main-menu > input:checked ~ div#menu-toggle > ul#op-menu > li{
+    padding-bottom: 0.5rem;
+}
+
+header > img{
+    width: 200px;
+    height: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+header > nav#login-shop > ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+header > nav#login-shop > ul > li{
+    padding: 0 0.5rem;
+    font-size: 25px;
+}
+
+header > nav#search{
+    background-color: black;
+    flex: 100%;
+}
+
+header > nav#search > div#searcher{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0.2rem 1rem;
+}
+
+header > nav#search > div#searcher > svg{
+    color: white;
+    width: 1.5rem;
+}
+
+header > nav#search > div#searcher > input{
+    background-color: black;
+    border: none;
+    margin-left: 0.5rem;
+}
+
+header nav#search div#searcher>input::placeholder {
+    color: white;
+
+}
+
+main > section#section-giftguide{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main > section#section-giftguide > div#header-giftguide{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex: 100%;
+}
+
+main > section#section-giftguide > picture#head-giftguide > img{
+    width: 100%;
+    height: auto;
+}
+
+main > section#section-giftguide > article.category {
+    display: flex;
+    flex-flow: column;
+    flex: 0 0 50%;
+    padding: 0 0.2rem;
+}
+
+main > section#section-giftguide > article.category img{
+    width: 100%;
+    
+}
+
+main > section#section-giftguide > article.category h3{
+    padding: 0.5rem 0;
+}
+
+main > section#section-giftguide > article.category h4{
+    padding-bottom: 0.5rem;
+}
+
+main > section#section-giftguide > article.category ul{
+    display: flex;
+    flex-flow: row;
+    padding-bottom: 1rem;
+}
+
+main > section#section-giftguide > article.category ul > li{
+    flex: 0 0 15%;
+    margin-right: 0.5rem;
+}
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding-top: 1rem;
+}
+
+footer > nav#additional-menu1{
+    padding-right: 3rem;
+    
+}
+
+footer > nav#additional-menu2{
+    padding-bottom: 2rem;
+    
+}
+
+footer > nav#additional-menu1 > h5,
+footer > nav#additional-menu2 > h5{
+    font-size: large;
+    padding-bottom: 1rem;
+    text-decoration: underline;
+}
+
+footer > nav#apps-menu{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+footer > nav#apps-menu > ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer > nav#apps-menu > ul > li{
+    flex: 0 0 40%;
+}
+
+footer > nav#apps-menu > ul > li img{
+    width: 100%;
+}
+
+@media (min-width:700px){
+
+    header > nav#main-menu{
+        order:4;
+        flex: 100%;
+        background-color: lightgrey;
+        padding: 0.5rem;
+    }
+
+    header > nav#main-menu > label{
+        display: none;
+    }
+
+    header > nav#main-menu > div#menu-toggle{
+        display: flex;
+    }
+
+    header > nav#main-menu > div#menu-toggle > ul#op-idiomas{
+        display: none;
+    }
+
+    header > nav#main-menu > div#menu-toggle > ul#op-menu{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        flex: 100%;
+    }
+
+    main > section#section-giftguide > article.category{
+        flex: 0 0 25%;
+    }
+
+    footer > nav#additional-menu1{
+        display: flex;
+        flex-flow: column;
+        flex: 50%;
+        align-items: center;
+    }
+
+    footer > nav#additional-menu2{
+        display: flex;
+        flex-flow: column;
+        flex: 50%;
+        align-items: center;
+    }
+
+}

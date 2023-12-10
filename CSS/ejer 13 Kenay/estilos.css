@@ -1,0 +1,230 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+div#contenedor{
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div#contenedor ul{
+    list-style: none;
+}
+
+div#contenedor a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+div#contenedor a:hover{
+    cursor: pointer;
+}
+
+div#contenedor > header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+header>nav#menu-principal{
+    flex: 26%;
+}
+
+header>nav#menu-principal>label>span {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+header>nav#menu-principal>input {
+	display: none;
+}
+
+header>nav#menu-principal>input:checked + div#menu-lateral{
+    display: flex;
+    flex-flow: column;
+    
+}
+
+header>nav#menu-principal>div#menu-lateral {
+	display: none;
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+header>nav#menu-principal>div#menu-lateral > div#arriba{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+header>nav#menu-principal>div#menu-lateral > div#arriba > label#buscar{
+	width: 60%;
+    display: flex;
+    background-color: rgb(214, 214, 214);
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+}
+
+header>nav#menu-principal>div#menu-lateral > div#arriba > label#buscar > nav#search > span{
+    color: rgb(194, 176, 155);
+}
+
+header>nav#menu-principal>div#menu-lateral > div#arriba > label#buscar > nav#search > input{
+    border: none;
+    background-color: rgb(214, 214, 214);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+header>nav#menu-principal>div#menu-lateral > div#arriba > label#buscar > nav#search > input:focus{
+    outline: none;
+}
+
+header>nav#menu-principal>div#menu-lateral >div#arriba >  label > img{
+    width: 1.5rem;
+}
+
+header>nav#menu-principal > div#menu-lateral > ul#menu{
+    padding: 0.5rem;
+    flex: 80%;
+}
+
+header>nav#menu-principal > div#menu-lateral > ul#menu > li{
+    padding: 0.5rem;
+    border-bottom: 1px solid lightgrey;
+    width: 90%;
+}
+
+header>a#logo{
+	flex: 35%;
+}
+
+header > nav#bag > ul, 
+header > nav#like > ul{
+    padding: 0;
+}
+
+header > label{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(214, 214, 214);
+    padding: 0.3rem;
+    margin: 0.5rem;
+}
+
+header > label > nav#search > span{
+    color: rgb(194, 176, 155);
+}
+
+header > label > nav#search > input{
+    border: none;
+    background-color: rgb(214, 214, 214);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+header > label > nav#search > input:focus{
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin-top: 5.5rem;
+}
+
+main > section{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main > section > article{
+    display: flex;
+    flex-flow: column;
+    flex: 0 0 50%;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+main > section > article > div#foto{
+    position: relative;
+}
+
+main > section > article > div#foto > img#deseados{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+main > section > article > div#foto > img#deseados:hover{
+    fill: red; /*No funciona*/
+}
+
+main > section > article > div#foto > picture > img{
+    width: 100%;
+    height: auto;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.tachado{
+    text-decoration: line-through;
+}
+
+footer{
+    display:flex;
+    flex-flow: column;
+    background-color: rgb(216, 204, 190);
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer > nav#socials > ul{
+    display:flex;
+    flex-flow: row;
+    margin: 1rem;
+}
+
+footer > nav#socials > ul > li{
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+}
+
+footer > nav#menu-footer{
+    margin: 0 1rem;
+}
+
+footer > nav#menu-footer > ul#links{
+    margin: 1rem 0;
+}
+
+footer > nav#menu-footer > ul#links > li{
+    padding: 0.5rem 0;
+    border-bottom: 1px solid grey;
+}
