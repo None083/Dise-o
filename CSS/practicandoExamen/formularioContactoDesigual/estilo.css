@@ -65,35 +65,35 @@ header > nav#menu-principal > label > span.hamburguer-line{
     margin: 5px;
 }
 
-header > nav#menu-principal > label > input[type="checkbox"],
+header > nav#menu-principal > input[type="checkbox"],
 header > nav#menu-principal > ul#menu{
     display: none;
 }
 
-header > nav#menu-principal > label > input[type="checkbox"]:checked ~ span:nth-of-type(1){ 
-    animation: first-span 2s linear 0s forwards;
+header > nav#menu-principal > input#hamburguer-icon:checked + label > span:nth-of-type(1){ 
+    animation: first-span 1s linear 0s forwards;
 }
 
-header > nav#menu-principal > label > input[type="checkbox"]:not(:checked) ~ span:nth-of-type(1){ 
-    animation: first-span-reverse 2s linear 0s forwards;
+header > nav#menu-principal > input#hamburguer-icon:not(:checked) + label > span:nth-of-type(1){ 
+    animation: first-span-reverse 1s linear 0s forwards;
 }
 
-header > nav#menu-principal > label > input[type="checkbox"]:checked ~ span:nth-of-type(2){
+header > nav#menu-principal > input#hamburguer-icon:checked + label > span:nth-of-type(2){
     opacity: 0;
-    transition: opacity 0.5s linear 0s;
+    transition: opacity 0.2s linear 0s;
 }
 
-header > nav#menu-principal > label > input[type="checkbox"]:not(:checked) ~ span:nth-of-type(2) {
+header > nav#menu-principal > input#hamburguer-icon:not(:checked) + label > span:nth-of-type(2) {
     opacity: 100;
-    transition: opacity 0.5s linear 0.5s;
+    transition: opacity 0.2s linear 0.3s;
 }
 
-header > nav#menu-principal > label > input[type="checkbox"]:checked ~ span:nth-of-type(3){
-    animation: third-span 2s linear 0s forwards;
+header > nav#menu-principal > input#hamburguer-icon:checked + label > span:nth-of-type(3){
+    animation: third-span 1s linear 0s forwards;
 }
 
-header > nav#menu-principal > label > input[type="checkbox"]:not(:checked) ~ span:nth-of-type(3) {
-    animation: third-span-reverse 2s linear 0s forwards;
+header > nav#menu-principal > input#hamburguer-icon:not(:checked) + label > span:nth-of-type(3) {
+    animation: third-span-reverse 1s linear 0s forwards;
 }
 
 @keyframes first-span{
@@ -132,13 +132,13 @@ header > nav#menu-principal > label > input[type="checkbox"]:not(:checked) ~ spa
     }
 }
 
-header > nav#menu-principal > label > input[type="checkbox"]:checked + ul#menu{
+header > nav#menu-principal > input#hamburguer-icon:checked ~ ul#menu{
     position: absolute;
     display: flex;
     flex-flow: column;
     background-color: black;
     width: 100%;
-    top: 55px;
+    top: 45px;
     padding: 1rem;
 }
 
