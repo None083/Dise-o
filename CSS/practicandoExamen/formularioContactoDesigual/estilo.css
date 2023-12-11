@@ -189,6 +189,10 @@ main > section#form-contacto > form#contacto > input[type="text"]:hover{
     color: white;
 }
 
+main > section#form-contacto > form#contacto > input[type="text"]::placeholder:hover{
+    color: white;
+}
+
 main > section#form-contacto > form#contacto > select#categoria{
     padding: 0.4rem;
     background-color: lightgrey;
