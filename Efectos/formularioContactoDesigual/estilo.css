@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div#contenedor{
+    display: flex;
+    flex-flow: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header > picture#logo-cabecera > img{
+    width: 150px;
+    height: auto;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header > nav#bloque-iconos > ul{
+    display: flex;
+}
+
+header > nav#bloque-iconos > ul > li{
+    padding-right: 1.5rem;
+    font-size: 30px;
+}
+
+header > nav#menu-principal{
+    display: flex;
+    flex-flow: column;
+    flex: 100%;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+header > nav#menu-principal > label{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+header > nav#menu-principal > label > span.hamburguer-line{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+}
+
+header > nav#menu-principal > input[type="checkbox"],
+header > nav#menu-principal > ul#menu{
+    display: none;
+}
+
+header > nav#menu-principal > input#hamburguer-icon:checked + label > span:nth-of-type(1){ 
+    animation: first-span 1s linear 0s forwards;
+}
+
+header > nav#menu-principal > input#hamburguer-icon:not(:checked) + label > span:nth-of-type(1){ 
+    animation: first-span-reverse 1s linear 0s forwards;
+}
+
+header > nav#menu-principal > input#hamburguer-icon:checked + label > span:nth-of-type(2){
+    opacity: 0;
+    transition: opacity 0.2s linear 0s;
+}
+
+header > nav#menu-principal > input#hamburguer-icon:not(:checked) + label > span:nth-of-type(2) {
+    opacity: 100;
+    transition: opacity 0.2s linear 0.2s;
+}
+
+header > nav#menu-principal > input#hamburguer-icon:checked + label > span:nth-of-type(3){
+    animation: third-span 1s linear 0s forwards;
+}
+
+header > nav#menu-principal > input#hamburguer-icon:not(:checked) + label > span:nth-of-type(3) {
+    animation: third-span-reverse 1s linear 0s forwards;
+}
+
+@keyframes first-span{
+    50%{
+        transform: translate(0, 15px);
+    }
+    100%{
+        transform: translateY(15px) rotate(45deg);
+    }
+}
+
+@keyframes first-span-reverse{
+    0%{
+        transform: translateY(15px) rotate(45deg);
+    }
+    50%{
+        transform: translate(0, 15px);
+    }
+}
+
+@keyframes third-span{
+    50%{
+        transform: translate(0, -15px);
+    }
+    100%{
+        transform: translateY(-15px) rotate(-45deg);
+    }
+}
+
+@keyframes third-span-reverse {
+    0% {
+        transform: translateY(-15px) rotate(-45deg);
+    }
+    50% {
+        transform: translate(0, -15px);
+    }
+}
+
+header > nav#menu-principal > input#hamburguer-icon:checked ~ ul#menu{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+    width: 100%;
+    top: 45px;
+    padding: 1rem;
+}
+
+header > nav#menu-principal > ul#menu > li{
+    margin-bottom: 0.2rem;
+}
+
+header > nav#menu-principal > ul#menu > li > a{
+    color: white;
+    
+}
+
+header > nav#menu-principal > ul#menu > li > ul.submenu{
+    display: none;
+}
+
+main > section#form-contacto{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+main > section#form-contacto > form#contacto{
+    display: flex;
+    flex-flow: column;
+    width: fit-content;
+}
+
+main > section#form-contacto > form#contacto > * { 
+    margin: 0.2rem 0;
+}
+
+main > section#form-contacto > form#contacto > label{
+    display: none;
+}
+
+main > section#form-contacto > form#contacto > input[type="text"]{
+    padding: 0.4rem;
+    border: 2px solid grey;
+    border-radius: 3px;
+}
+
+main > section#form-contacto > form#contacto > input[type="text"]:hover{
+    background-color: black;
+    outline: 3px solid grey;
+    color: white;
+}
+
+main > section#form-contacto > form#contacto > input[type="text"]::placeholder:hover{
+    color: white;
+}
+
+main > section#form-contacto > form#contacto > select#categoria{
+    padding: 0.4rem;
+    background-color: lightgrey;
+    border-radius: 3px;
+    border: 2px solid grey;
+    color: grey;
+}
+
+main > section#form-contacto > form#contacto > select#categoria:hover{
+    cursor: pointer;
+}
+
+main > section#form-contacto > form#contacto > span#caracteres{
+    color: grey;
+}
+
+main > section#form-contacto > form#contacto > textarea#mensaje{
+    border-radius: 3px;
+    border: 2px solid grey;
+}
+
+main > section#form-contacto > form#contacto > input[type="button"]{
+    background-color: black;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 3px;
+}
+
+main > section#form-contacto > form#contacto > input[type="button"]:hover{
+    background-color: grey;
+    border-color: grey;
+    cursor: pointer;
+}
+
+footer > nav#menu-adicional{
+    background-color: lightgrey;
+    padding: 1rem;
+}
+
+footer > nav#menu-adicional > ul{
+    text-align: center;
+}
+
+footer > nav#menu-adicional > ul > li{
+    padding-bottom: 0.2rem;
+    font-size: small;
+}

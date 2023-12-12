@@ -63,6 +63,7 @@ header > nav#menu-principal > label > span.hamburguer-line{
     height: 5px;
     background-color: white;
     margin: 5px;
+    transition: background 0s .25s;
 }
 
 header > nav#menu-principal > input[type="checkbox"],
@@ -85,7 +86,7 @@ header > nav#menu-principal > input#hamburguer-icon:checked + label > span:nth-o
 
 header > nav#menu-principal > input#hamburguer-icon:not(:checked) + label > span:nth-of-type(2) {
     opacity: 100;
-    transition: opacity 0.2s linear 0.3s;
+    transition: opacity 0.2s linear 0.2s;
 }
 
 header > nav#menu-principal > input#hamburguer-icon:checked + label > span:nth-of-type(3){
@@ -110,7 +111,7 @@ header > nav#menu-principal > input#hamburguer-icon:not(:checked) + label > span
         transform: translateY(15px) rotate(45deg);
     }
     50%{
-        transform: translate(0, 0);
+        transform: translate(0, 15px);
     }
 }
 
@@ -128,7 +129,7 @@ header > nav#menu-principal > input#hamburguer-icon:not(:checked) + label > span
         transform: translateY(-15px) rotate(-45deg);
     }
     50% {
-        transform: translate(0, 0);
+        transform: translate(0, -15px);
     }
 }
 

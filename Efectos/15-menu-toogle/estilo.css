@@ -1,0 +1,14 @@
+body{
+    background-color: lightblue;
+}
+
+label.menu-toogle{
+
+}
+
+label.menu-toogle > span.hamburguer-line{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+}
