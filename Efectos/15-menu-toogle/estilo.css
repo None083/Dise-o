@@ -1,14 +1,77 @@
-body{
+body {
     background-color: lightblue;
 }
 
-label.menu-toogle{
-
+label>input#hamburguer {
+    display: none;
 }
 
-label.menu-toogle > span.hamburguer-line{
-    width: 40px;
-    height: 5px;
-    background-color: white;
-    margin: 5px;
+label {
+    display: inline-block;
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background-color: rgb(46, 46, 46);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+label>span.hamburguer-line {
+    position: absolute;
+    top: 2.75rem;
+    left: 1rem;
+    width: 4rem;
+    height: .4rem;
+    background: white;
+    transition: background 0s .25s;
+}
+
+label>span.hamburguer-line:nth-child(2) {
+    top: 1.6rem;
+    /*transition-property: top, transform;
+         transition-delay: .25s, 0s;
+         transition-duration: .25s, .25s;*/
+    transition: top .25s ease .25s, transform .25s ease 0s;
+    /*para la vuelta*/
+}
+
+label>span.hamburguer-line:nth-child(4) {
+    top: 3.9rem;
+    /*transition-property: top, transform;
+         transition-delay: .25s, 0s;
+         transition-duration: .25s, .25s;*/
+    transition: top .25s ease .25s, transform .25s ease 0s;
+    /*para la vuelta*/
+    /*primero deshacen el giro y luego vuelven a su posición original*/
+}
+
+input#hamburguer:checked~span.hamburguer-line:nth-child(2) {
+    top: 2.75rem;
+    /*primero se desplaza hacia el centro*/
+    transform: rotate(45deg);
+    /*después rota 45º*/
+    transition-delay: 0s, .25s;
+    /*primero se desplazan y luego giran*/
+}
+
+input#hamburguer:checked~span.hamburguer-line:nth-child(4) {
+    top: 2.75rem;
+    /*primero se desplaza hacia el centro*/
+    transform: rotate(-45deg);
+    /*después rota 45º*/
+    transition-delay: 0s, .25s;
+    /*primero se desplazan y luego giran*/
+}
+
+input#hamburguer:checked~span.hamburguer-line:nth-child(3) {
+    background: none;
+    /*La línea central pierde el color de fondo*/
+}
+
+nav.main-menu{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(46, 46, 46);
 }
