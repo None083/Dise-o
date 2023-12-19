@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-image: url("Texture-background/99.jpg");
+    background-size: cover;
+}
+
+div.row{
+    padding: 1.5rem;
+}
+
+div.row > div > ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+div.row > div > ul > li{
+    flex: 0 0 20%;
+    background-color: white;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+div.row > div > ul > li:nth-child(even){
+    rotate: 6deg;
+}
+
+div.row > div > ul > li:nth-child(odd){
+    rotate: -6deg;
+}
+
+div.row > div > ul > li:hover{
+    rotate: 0deg;
+    transition: rotate 0.5s ease;
+}
+
+div.row > div > ul > li > a{
+    display: flex;
+    flex-flow: column;
+}
+
+div.row > div > ul > li > a[title]::after{
+    content: attr(title);
+    padding-top: 1.5rem;
+}
+
+
+div.row > div > ul > li > a > img{
+    width: 100%;
+    height: auto;
+}
+
+div.row > div > ul > li > a > img:hover{
+    scale: 105%;
+    transition: scale 0.5s ease;
+}
