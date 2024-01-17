@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reproductor audio</title>
     <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
+
     <div id="musicPlayer">
+        <audio id="audio">
+            <source src="hotel-california.ogg" type="audio/ogg">
+        </audio>
+
         
+
+        <button id="play" class="boton visible">play</button>
+        <button id="pause" class="boton oculto">pause</button>
+        <button id="stop" class="boton">stop</button>
+        <button id="restart" class="boton">restart</button>
+        <input type="range" id="volume" value="50" min="0" max="100">
+        <button id="mute" class="boton">mute</button>
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>

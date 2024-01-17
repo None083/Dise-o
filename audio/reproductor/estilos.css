@@ -1,20 +1,21 @@
-#musicPlayer {
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
+#musicPlayer{
+    display: flex;
+    background: linear-gradient(#E9A431, #D83C2D);
+    width: 400px;
+    height: auto;
 }
 
-#musicPlayer audio {
-    width: 100%;
-    margin: 10px 0;
+.boton{
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+    
 }
 
-#musicPlayer button {
-    margin: 2px;
-    padding: 5px;
-    font-size: 12px;
-    cursor: pointer;
+.visible{
+    display: block;
+}
+.oculto{
+    display: none;
 }

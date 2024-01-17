@@ -1,30 +1,45 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const musicPlayer = document.getElementById('musicPlayer');
-    const audioPlayer = new Audio();
-    audioPlayer.controls = true;
+document.addEventListener("DOMContentLoaded", function(event) {
+    var audio=document.getElementById('audio');
+    var play=document.getElementById('play');
+    var pause=document.getElementById('pause');
+    var stop=document.getElementById('stop');
+    var restart=document.getElementById('restart');
+    var range=document.getElementById('range');
+    var mute=document.getElementById('mute');
 
-    musicPlayer.appendChild(audioPlayer);
+    play.addEventListener('click', function(event){
+        audio.play();
+        play.className="oculto";
+        pause.className="visible";
+    },false);
 
-    const playButton = document.createElement('button');
-    playButton.textContent = 'Play';
-    playButton.addEventListener('click', function () {
-        if (audioPlayer.paused) {
-            audioPlayer.play();
-            playButton.textContent = 'Pause';
-        } else {
-            audioPlayer.pause();
-            playButton.textContent = 'Play';
-        }
-    });
+    pause.addEventListener('click', function(event){
+        audio.pause();
+        pause.className="oculto";
+        play.className="visible";
+    },false);
 
-    const stopButton = document.createElement('button');
-    stopButton.textContent = 'Stop';
-    stopButton.addEventListener('click', function () {
-        audioPlayer.pause();
-        audioPlayer.currentTime = 0;
-        playButton.textContent = 'Play';
-    });
+    stop.addEventListener('click', function(event){
+        audio.pause();
+        audio.currentTime=0;
+        pause.className="oculto";
+        play.className="visible";
+    },false);
 
-    musicPlayer.appendChild(playButton);
-    musicPlayer.appendChild(stopButton);
-});
+    restart.addEventListener('click', function(event){
+        audio.play();
+        audio.currentTime=0;
+        play.className="oculto";
+        pause.className="visible";
+    },false);
+
+    mute.addEventListener('click', function(event){
+        audio.volume=0;
+        volume.value=0;
+    },false);
+
+    volume.addEventListener('change', function(event){
+        audio.volume=volume.value/100;
+    })
+
+})
