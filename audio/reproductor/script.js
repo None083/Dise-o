@@ -9,34 +9,39 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     play.addEventListener('click', function(event){
         audio.play();
-        play.className="oculto";
-        pause.className="visible";
+        play.className="oculto boton";
+        pause.className="visible boton";
     },false);
 
     pause.addEventListener('click', function(event){
         audio.pause();
-        pause.className="oculto";
-        play.className="visible";
+        pause.className="oculto boton";
+        play.className="visible boton";
     },false);
 
     stop.addEventListener('click', function(event){
         audio.pause();
         audio.currentTime=0;
-        pause.className="oculto";
-        play.className="visible";
+        pause.className="oculto boton";
+        play.className="visible boton";
     },false);
 
     restart.addEventListener('click', function(event){
         audio.play();
         audio.currentTime=0;
-        play.className="oculto";
-        pause.className="visible";
+        play.className="oculto boton";
+        pause.className="visible boton";
     },false);
 
-    mute.addEventListener('click', function(event){
-        audio.volume=0;
-        volume.value=0;
-    },false);
+    mute.addEventListener('click', function(){
+        if(mute.className=="muteado"){
+            mute.className="boton unmuted";
+            audio.volume=0;
+            volume.value=0;
+        } else{
+            mute.className="muteado";
+        }
+    });
 
     volume.addEventListener('change', function(event){
         audio.volume=volume.value/100;

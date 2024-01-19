@@ -3,19 +3,29 @@
     background: linear-gradient(#E9A431, #D83C2D);
     width: 400px;
     height: auto;
+    border-radius: 10px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
 
-.boton{
-    width: 50px;
-    height: auto;
-    border-radius: 10px;
+button{
     border: none;
-    
+    margin: 10px;
+    background: none;
+    cursor: pointer;
 }
 
 .visible{
     display: block;
 }
 .oculto{
+    display: none;
+}
+
+button.muteado #activarMute{
+    display: none;
+}
+
+button.unmuted #desactivarMute{
     display: none;
 }
