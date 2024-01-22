@@ -4,8 +4,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var pause=document.getElementById('pause');
     var stop=document.getElementById('stop');
     var restart=document.getElementById('restart');
-    var range=document.getElementById('range');
+    var volume=document.getElementById('volume');
     var mute=document.getElementById('mute');
+    var duration=document.getElementById('duration');
 
     play.addEventListener('click', function(event){
         audio.play();
@@ -45,6 +46,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     volume.addEventListener('change', function(event){
         audio.volume=volume.value/100;
-    })
+    });
+
+    duration.addEventListener('', function(event){
+        
+    });
 
 })

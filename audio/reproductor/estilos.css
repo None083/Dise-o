@@ -1,7 +1,7 @@
 #musicPlayer{
     display: flex;
     background: linear-gradient(#E9A431, #D83C2D);
-    width: 400px;
+    width: fit-content;
     height: auto;
     border-radius: 10px;
     flex-flow: row nowrap;
@@ -10,7 +10,7 @@
 
 button{
     border: none;
-    margin: 10px;
+    margin: 10px 5px;
     background: none;
     cursor: pointer;
 }
