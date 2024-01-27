@@ -1,0 +1,33 @@
+#musicPlayer{
+    display: flex;
+    background: linear-gradient(#E9A431, #D83C2D);
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+input#progress{
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.boton{
+    border: none;
+    margin: 10px 5px;
+    background: none;
+    cursor: pointer;
+}
+
+.visible{
+    display: block;
+}
+.oculto{
+    display: none;
+}
+
+input#volume{
+    flex: 10%;
+}
