@@ -1,11 +1,27 @@
-#musicPlayer{
+div#musicPlayer{
     display: flex;
     background: linear-gradient(#E9A431, #D83C2D);
-    width: 350px;
+    width: 600px;
     height: auto;
     border-radius: 10px;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column;
+}
+
+div#controles{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+div#agrupacion{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div#controles > button#fullscreen{
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 #video{
@@ -16,16 +32,19 @@
 }
 
 input#progress{
-    width: 100%;
-    margin: 10px;
-    margin-bottom: 0;
+    margin: 10px 20px;
+    flex: 10%;
 }
 
 .boton{
     border: none;
-    margin: 10px 5px;
+    margin: 10px 0;
     background: none;
     cursor: pointer;
+}
+
+span{
+    padding-top: 14px;
 }
 
 .visible{
@@ -33,8 +52,4 @@ input#progress{
 }
 .oculto{
     display: none;
-}
-
-input#volume{
-    flex: 10%;
 }
