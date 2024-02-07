@@ -1,0 +1,88 @@
+Mostrar el menú
+Mostrar el menú con un efecto de persiana. Controlar la acumulación de efectos.
+Puntuación máxima0.5
+
+Cambio de color de la hamburguesa
+Cambio de color de la hamburguesa con una animación.
+Puntuación máxima0.5
+
+Barra central de la hamburguesa
+Al hacer clic sobre la hamburguesa, la línea central debe crecer hasta alcanzar el mismo 
+ancho que el resto de líneas con un efecto de animación. Controlar la acumulación de efectos.
+Puntuación máxima0.5
+
+Cerrar el menú
+Ocultar el menú con un efecto de persiana, recuperar el color de la hamburguesa y el tamaño de 
+la línea central con una animación. Controla la acumulación de efectos.
+Puntuación máxima0.5
+
+Submenú Alfombras vinílicas
+Desplegar el submenú con un efecto de fundido deslizándose desde la izquierda. 
+El icono + se transforma en el icono -. Al volver a hacer clic dicho icono debe volver al +.
+Puntuación máxima1
+
+Redimensionar
+Borrar todo el código insertado en tiempo de ejecución al redimensionar la pantalla.
+Puntuación máxima0.5
+
+Barra social
+Al cargar la página debe aparecer la barra social en el lateral derecho con un efecto de cambio de opacidad.
+Puntuación máxima0.25
+
+Pestaña de Chat
+Al cargar la página debe aparecer la pestaña de chat en la parte inferior con un efecto de cambio de opacidad.
+Puntuación máxima0.25
+
+Chat - mostrar
+Al hacer clic sobre la pestaña de chat debe mostrarse la ventana de chat con un efecto 
+de persiana deslizante hacia arriba.
+Puntuación máxima0.5
+
+Chat - ocultar
+Al hacer clic sobre la X de la cabecera del chat debe ocultarse la ventana con un efecto 
+de persiana deslizante hacia abajo.
+Puntuación máxima0.5
+
+SLIDER
+Insertar el slider en la web con las fotografías dadas.
+Puntuación máxima0.5
+
+SLIDER MINIATURAS
+Deben aparecer las fotos en miniatura. Cuando se posicione el ratón se resaltará la miniatura 
+y se cargará la imagen correspondiente.
+Puntuación máxima0.5
+
+REPRODUCIR Y PARAR SLIDER
+El slider se debe reproducir a la velocidad adecuada y se debe detener al posicionar el ratón sobre él.
+Puntuación máxima0.5
+
+FORMULARIO CAMPOS OBLIGATORIOS
+Cuando todos los campos requeridos pierdan el foco se debe
+comprobar si la longitud del dicho campo es 0.
+Puntuación máxima0.5
+
+FORMULARIO TEXTAREA
+Cada vez que se inserte un nuevo carácter, se informe al usuario del
+número de caracteres restantes con un mensaje.
+Puntuación máxima0.5
+
+FLECHA GO-UP
+Al hacer scroll debe aparecer la fecha go-up en la parte inferior derecha con un efecto de cambio de opacidad.
+Puntuación máxima0.5
+
+CABECERA
+Al hacer scroll, la cabecera quedará anclada con algo de opacidad.
+Puntuación máxima0.5
+
+IR ARRIBA
+Al hacer clic sobre la flecha, se debe ir hacia arriba con una animación.
+Puntuación máxima0.5
+
+MOSTRAR BOTÓN DE COMPRA
+Al posicionar el ratón sobre cualquier artículo se debe mostrar el botón de compra.
+Puntuación máxima0.5
+
+OCULTAR BOTÓN DE COMPRA
+Cuando el ratón deja de estar sobre el artículo, el botón se compra se oculta con 
+un efecto deslizante hacia arriba.
+Puntuación máxima0.5
