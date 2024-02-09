@@ -1,11 +1,10 @@
 $(document).ready(function(){
-    $(".noticia").hover(
+    $("img").hover(
         function(){ // mouseenter
-            var titular = $(this).find('h3').text();
-            $(this).append('<h3 class="explicativo">' + titular + '</h3>');
+            $(this).next("h3").toggle();
         },
         function(){ // mouseleave
-            $(this).find(".explicativo").remove();
+            $(this).next("h3").toggle();
         }
     );
 });
