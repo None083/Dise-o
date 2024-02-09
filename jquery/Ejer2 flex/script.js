@@ -1,10 +1,11 @@
 $(document).ready(function(){
-    $(".menu").hover(
-        function(){ // mouseenter
-            $(this).next("li a").css("color", "red")
+    $("li").hover(
+        function(){
+            console.log("entra");
+            $(this).children("a").css("color", "grey")
         },
-        function(){ // mouseleave
-            $(this).next("li a").css("color", "black")
+        function(){
+            $(this).children("a").css("color", "white")
         }
     );
 });

@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div#contenedor {
+    display: flex;
+    flex-flow: column;
+    font-family: Tahoma;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header>picture#logo-cabecera {
+    width: 50%;
+    flex: 50%;
+    padding: 0.5rem;
+}
+
+header>picture#logo-cabecera>img {
+    width: 130px;
+    height: auto;
+}
+
+header>nav#bloque-iconos>ul {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    flex: 50%;
+    width: 50%;
+}
+
+header>nav#bloque-iconos>ul>li>a>i {
+    color: black;
+    font-size: 35px;
+    padding: 0.5rem 1rem;
+}
+
+header>nav#menu-principal {
+    width: 100%;
+}
+
+header>nav#menu-principal>div#hamburguesa {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding-bottom: 0.2rem;
+}
+
+header>nav#menu-principal>div#hamburguesa>label>span {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+header>nav#menu-principal>div#hamburguesa>input {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header>nav#menu-principal>div#hamburguesa>ul#menu {
+    display: none;
+}
+
+header>nav#menu-principal>ul#menu li {
+    color: white;
+}
+
+header>nav#menu-principal>div#hamburguesa>input#menu-hamburger:checked~ul#menu {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 7.5rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+header>nav#menu-principal>div#hamburguesa>ul#menu>li>ul.submenu {
+    display: none;
+}
+
+main>section#form-contacto {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+main>section#form-contacto>form {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+    max-width: 230px;
+
+}
+
+main>section#form-contacto>form>label {
+    display: none;
+}
+
+main>section#form-contacto>form>* {
+    margin: 0.2rem 0;
+}
+
+main>section#form-contacto>form>input,
+main>section#form-contacto>form>select {
+    padding: 0.3rem 0.2rem;
+}
+/*
+main>section#form-contacto>form>input[type="text"]:hover {
+    background-color: black;
+    color: grey;
+    outline: 3px solid grey;
+    border-radius: 1%;
+    border: 3px solid grey;
+    border-inline: 3px solid grey;
+}
+*/
+main>section#form-contacto>form>select {
+    background-color: lightgrey;
+    color: rgb(80, 80, 80);
+}
+
+main>section#form-contacto>form>span {
+    font-size: small;
+    color: #808080;
+}
+
+main>section#form-contacto>form>textarea {
+    font-size: large;
+}
+
+main>section#form-contacto>form>input[type="button"] {
+    background-color: black;
+    color: white;
+}
+
+main>section#form-contacto>form>input[type="button"]:hover {
+    background-color: #808080;
+    color: white;
+}
+
+footer {
+    display: none;
+}
