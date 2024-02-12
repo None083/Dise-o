@@ -1,11 +1,17 @@
-$(document).ready(function(){
-    $("li").hover(
-        function(){
-            console.log("entra");
+$(document).ready(function () {
+    $("li").focusin(function () {
+        $(this).children("a").css("color", "grey")
+    }
+    ).focusout(function () {
+        $(this).children("a").css("color", "white")
+    }).hover(
+        function () {
+
             $(this).children("a").css("color", "grey")
         },
-        function(){
+        function () {
             $(this).children("a").css("color", "white")
         }
     );
+
 });
