@@ -8,8 +8,6 @@ $(document).ready(function () {
     });
 
     $(window).resize(function () {
-        if ($(this).width() >= 1100) {
-            $('#menu-principal input[type="checkbox"]').prop('checked', false);
-        }
+        $('#menu-principal input[type="checkbox"]').prop('checked', false);
     });
 });
