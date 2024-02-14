@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarea 8</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        #mi-capa {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#mi-capa").click(function(evento){
+                $(this).css("width", function(index,value){
+                    var aumento = prompt("¿Cuánto quieres aumentar?","25");
+                    return (parseInt(value) + parseInt(aumento)) + "px";
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="mi-capa"></div>
+</body>
+</html>
