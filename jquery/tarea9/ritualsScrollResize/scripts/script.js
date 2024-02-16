@@ -16,10 +16,10 @@ $(document).ready(function () {
             }
         },
         mouseenter: function () {
-            $("span", this).animate({color: '#827c82'});
+            $(this).children("span").animate({color: '#827c82'});
         },
         mouseleave: function () {
-            $("span", this).animate({color: '#fff'});
+            $(this).children("span").animate({color: '#fff'});
         }
     })
 });
