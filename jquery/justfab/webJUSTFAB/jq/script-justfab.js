@@ -12,14 +12,11 @@ $(document).ready(function () {
     });
     $(window).on({
         scroll: function () {
-            if ($(document).scrollTop()) {
-                $("header#top > div").addClass("fijado");
-            } else {
-                $("header#top > div").removeClass("fijado");
-            }
             if ($(this).scrollTop() > 500) {
+                $("header#top > div").addClass("fijado").fadeIn();
                 $("div#volverarriba").fadeIn();
             } else {
+                $("header#top > div").removeClass("fijado");
                 $("div#volverarriba").fadeOut();
             }
         }
