@@ -103,20 +103,20 @@ header>nav#menu-iconos>div#search>img#lupa-negra {
 
 header>nav#menu-iconos>div#search>input,
 header>nav#menu-iconos>a#profile>span,
-header>nav#menu-iconos>a#messages>*,
-header>nav#menu-iconos>a#alerts>*,
-header>nav#menu-iconos>a#submit>* {
+header>nav#menu-iconos>a#messages-header>*,
+header>nav#menu-iconos>a#alerts-header>*,
+header>nav#menu-iconos>a#submit-header>* {
     display: none;
 }
 
 header>nav#menu-iconos>a#profile>img,
-header>nav#menu-iconos>a#messages>img,
-header>nav#menu-iconos>a#alerts>img {
+header>nav#menu-iconos>a#messages-header>img,
+header>nav#menu-iconos>a#alerts-header>img {
     width: 26px;
     height: auto;
 }
 
-header>nav#menu-iconos>a#submit>img {
+header>nav#menu-iconos>a#submit-header>img {
     width: 29px;
     height: auto;
 }
@@ -399,7 +399,7 @@ main#index>section#galery-index>article.post>div.post-info>span.boton-seguir {
     font-weight: 600;
     margin-right: 0.5rem;
     padding: 0.3rem 0.8rem;
-    color: #D83C2D;
+    color: #2A2121;
     border: 1px solid #2A2121;
     border-radius: 3px;
     cursor: pointer;
@@ -510,7 +510,7 @@ main#login form>input[type="password"]:focus {
 }
 
 main#login form>span.warning {
-    color: red;
+    color: #D83C2D;
     visibility: hidden;
 }
 
@@ -922,6 +922,7 @@ main#profile-page > section#profile-gallery>article.post>div.post-info>span.boto
     border: 1px solid #2A2121;
     border-radius: 3px;
     cursor: pointer;
+    
 }
 
 main#profile-page > section#profile-gallery>article.post>div.post-info>img {
@@ -1342,9 +1343,9 @@ footer>div#other-info-footer>span {
 @media(width > 500px) {
 
     /* Inicio header tablet */
-    header>nav#menu-iconos>a#messages>img,
-    header>nav#menu-iconos>a#alerts>img,
-    header>nav#menu-iconos>a#submit>img {
+    header>nav#menu-iconos>a#messages-header>img,
+    header>nav#menu-iconos>a#alerts-header>img,
+    header>nav#menu-iconos>a#submit-header>img {
         display: block;
     }
 
@@ -1431,9 +1432,9 @@ footer>div#other-info-footer>span {
 
     header>nav#menu-iconos>div#search,
     header>nav#menu-iconos>a#profile,
-    header>nav#menu-iconos>a#messages,
-    header>nav#menu-iconos>a#alerts,
-    header>nav#menu-iconos>a#submit {
+    header>nav#menu-iconos>a#messages-header,
+    header>nav#menu-iconos>a#alerts-header,
+    header>nav#menu-iconos>a#submit-header {
         display: flex;
         align-items: center;
     }
@@ -1448,8 +1449,8 @@ footer>div#other-info-footer>span {
 
     header>nav#menu-iconos>div#search>img#lupa-negra,
     header>nav#menu-iconos>a#profile>img,
-    header>nav#menu-iconos>a#messages>img,
-    header>nav#menu-iconos>a#alerts>img {
+    header>nav#menu-iconos>a#messages-header>img,
+    header>nav#menu-iconos>a#alerts-header>img {
         width: 22px;
         height: auto;
         margin-right: 0.5rem;
@@ -1462,9 +1463,9 @@ footer>div#other-info-footer>span {
     }
 
     header>nav#menu-iconos>a#profile>span,
-    header>nav#menu-iconos>a#messages>span,
-    header>nav#menu-iconos>a#alerts>span,
-    header>nav#menu-iconos>a#submit>span {
+    header>nav#menu-iconos>a#messages-header>span,
+    header>nav#menu-iconos>a#alerts-header>span,
+    header>nav#menu-iconos>a#submit-header>span {
         display: block;
         color: #E1DBD5;
     }
