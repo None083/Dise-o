@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <title>TulipArt - Submit</title>
+    <link rel="icon" type="image/jpg" href="https://imagenes-tulipart.s3.amazonaws.com/imagenes/tulips/LogoTulipArtPlanoIcon.webp">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+    <div id="contenedor2">
+        <header class="submit">
+            <h1>TulipArt, Galería de arte</h1>
+            <span class="h1">Submit art</span>
+            <a href="index.html">
+                <img alt="Icono x" src="imagenes proyecto/icons/x.svg">
+            </a>
+        </header>
+        <main class="submit">
+            <div id="imageContainer">
+                <img alt="Obra arte" src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra-submit.webp">
+            </div>
+            <form action="post.html">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Title">
+                <label for="tags">Tags</label>
+                <input type="text" id="tags" name="tags"
+                    placeholder="E.g.: tulip, digital, painting, raining, tutorial">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="3"
+                    placeholder="Write a brief description of your artwork. How’d you made it? How much did it take? Materials?"></textarea>
+                <div id="columns">
+                    <div id="column1">
+                        <div class="checkbox">
+                            <input type="checkbox" id="source">
+                            <label class="smaller" for="source">
+                                <div></div>
+                                Allow to download the source file
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="mas18">
+                            <label class="smaller" for="mas18">
+                                <div></div>
+                                Contains mature content
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="aitools">
+                            <label class="smaller" for="aitools">
+                                <div></div>
+                                Content created utilizing AI tools
+                            </label>
+                        </div>
+                    </div>
+                    <div id="raya"></div>
+                    <div id="column2">
+                        <div class="checkbox">
+                            <input type="checkbox" id="third-party" checked>
+                            <label class="smaller" for="third-party">
+                                <div></div>
+                                Not authorized for inclusion in third-party AI datasets.
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="acceptTerms" checked>
+                            <label class="smaller" for="acceptTerms">
+                                <div></div>
+                                I have read and agree to the Submission Policy and the Terms of Service.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
