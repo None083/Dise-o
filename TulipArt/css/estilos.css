@@ -622,6 +622,18 @@ main#login div.or {
 }
 /* Login - Final main#login */
 
+/* Upload - Inicio main */
+div#upload-info{
+    text-align: center;
+}
+
+div#upload-info > div#tulipanes-upload{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+/* Upload - Final main */
+
 /* Submit - Inicio main.submit */
 div#contenedor2{
     font-family: "Kumbh Sans", sans-serif;
@@ -742,6 +754,232 @@ main.submit form >div#columns>div#column2 label{
     font-size: 10px;
 }
 /* Submit - Final main.submit */
+
+/* Post - Inicio main.post */
+main.post{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+main.post>section.post{
+    display: flex;
+    flex-flow: column;
+    max-width: 700px;
+    background-color: #EEECE8;
+}
+main.post>aside{
+    display: none;
+    background-color: #EEECE8;
+}
+main.post>section.post>div#user{
+    height: 5rem;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+main.post>section.post>div#user img{
+    width: 40px;
+    height: auto;
+    margin-left: 47px;
+    margin-right: 5px;
+}
+main.post>section.post>div#user>div#nombre{
+    display: flex;
+    flex-flow: column;
+}
+main.post>section.post>div#user>div#nombre span#nombre{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2A2121;
+}
+
+main.post>section.post>div#user>div#nombre>span#fecha{
+    font-size: 14px;
+    font-weight: 300;
+}
+main.post>section.post>img#image-post{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+main.post>section.post>div#option{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+main.post>section.post>div#option>div>img{
+    width: 20px;
+    height: auto;
+}
+
+main.post>section.post>span#title{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 30px;
+}
+main.post>section.post>div.icons{
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    border-bottom: #2A2121 1px solid;
+    padding: 5px 30px;
+}
+main.post>section.post>div.icons>span{
+    margin-right: 20px;
+}
+main.post>section.post>div.icons>span>img#delete{
+    margin-left: 20px;
+}
+main.post>section.post>div.icons>span>img{
+    width: 18px;
+    height: auto;
+}
+main.post>section.post>div.icons>div{
+border-left: #2A2121 1px solid;
+}
+main.post>section.post>span#description{
+    margin:5px 30px ;
+    font-size: 14px;
+    font-weight: 300;
+}
+main.post>section.post>span#copy{
+    margin:5px 30px ;
+    font-size: 18px;
+    font-weight: 200;
+}
+main.post>section.post>div#comments{
+    margin:5px 30px;
+    border-top: 1px solid #2A2121;
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+}
+main.post>section.post>div#comments>span{
+   font-weight: 500;
+   font-size: 14px; 
+   align-self: flex-start;
+   margin-top: 2rem;
+}
+main.post>section.post>div#comments>span>span{
+    font-weight: 300;
+    font-size: 14px; 
+}
+main.post>section.post>div#comments>div>div{
+    display: flex;
+    flex-flow: row;
+}
+main.post>section.post>div#comments>div#writeComments>div>img{
+    width: 45px;
+    height: 45px;
+}
+main.post>section.post>div#comments>div#writeComments>div>div{
+    height: 90px;
+    width: 100%;
+    background-color: #E1DBD5;
+    border: 1px solid #2A2121;
+}
+main.post>section.post>div#comments>div#writeComments>div{
+    width: 100%;
+}
+main.post>section.post>div#comments>div#writeComments{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+main.post>section.post>div#comments>div#writeComments>div>div>textarea{
+    border: none;
+    background-color: #E1DBD5;
+    resize: none;
+}
+main.post>section.post>div#comments>div#writeComments>div>div>div{
+    display: flex;
+    flex-flow: row;
+    justify-content: end;
+}
+main.post>section.post>div#comments>div#writeComments>div>div>div>span#cancel{
+    font-size: 12px;
+    font-weight: 500;
+    color:#2A2121;
+}
+main.post>section.post>div#comments>div#writeComments>div>div>div>span#comment{
+    font-size: 12px;
+    font-weight: 500;
+    color:#E9A431;
+    margin: 0 10px;
+}
+main.post>section.post>div#comments>div#comment{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin: 20px 0;
+}
+main.post>section.post>div#comments>div#comment>div{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+main.post>section.post>div#comments>div#comment>div>img{
+    width: 45px;
+    height: 45px;
+}
+main.post>section.post>div#comments>div#comment>div>div{
+    width: 100%;
+    background-color:#E1DBD5 ;
+    height: 60px;
+    border: 1px solid #2A2121;
+}
+main.post>section.post>div#comments>div#comment>div.icons{
+    display: flex;
+    flex-flow: row;
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 300px;
+}
+main.post>section.post>div#comments>div#comment>div.icons>img{
+    width: 18px;
+    height: 18px;
+}
+main.post>section.post>div#comments>div#comment>div.icons>img#corazon{
+    margin-left: 10px;
+}
+main.post>section.post>div#comments>div#answer{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 20px;
+}
+main.post>section.post>div#comments>div#answer>div{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+main.post>section.post>div#comments>div#answer>div>img{
+    width: 45px;
+    height: 45px;
+}
+main.post>section.post>div#comments>div#answer>div>div{
+    width: 100%;
+    background-color:#E1DBD5 ;
+    height: 60px;
+    border: 1px solid #2A2121;
+}
+main.post>section.post>div#comments>div#answer>div.icons{
+    display: flex;
+    flex-flow: row;
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 300px;
+}
+main.post>section.post>div#comments>div#answer>div.icons>img{
+    width: 18px;
+    height: 18px;
+}
+main.post>section.post>div#comments>div#answer>div.icons>img#corazon{
+    margin-left: 10px;
+}
+/* Post - Final main.post */
 
 /* Profile - Inicio main#profile-page */
 main#profile-page{
@@ -1031,233 +1269,6 @@ main#cookies > span.txt{
     margin-bottom: 1rem;
 }
 /* Cookies - Final main#cookies */
-
-/* Post - Inicio main.post */
-main.post{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-main.post>section.post{
-    display: flex;
-    flex-flow: column;
-    max-width: 700px;
-    background-color: #EEECE8;
-}
-main.post>aside{
-    display: none;
-    background-color: #EEECE8;
-}
-main.post>section.post>div#user{
-    height: 5rem;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-}
-main.post>section.post>div#user img{
-    width: 40px;
-    height: auto;
-    margin-left: 47px;
-    margin-right: 5px;
-}
-main.post>section.post>div#user>div#nombre{
-    display: flex;
-    flex-flow: column;
-}
-main.post>section.post>div#user>div#nombre span#nombre{
-    font-size: 14px;
-    font-weight: 600;
-    color: #2A2121;
-}
-
-main.post>section.post>div#user>div#nombre>span#fecha{
-    font-size: 14px;
-    font-weight: 300;
-}
-main.post>section.post>img#image-post{
-    width: 100%;
-    height: auto;
-    margin-bottom: 30px;
-}
-main.post>section.post>div#option{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    padding: 0 30px;
-    align-items: center;
-}
-main.post>section.post>div#option>div>img{
-    width: 20px;
-    height: auto;
-}
-
-main.post>section.post>span#title{
-    font-size: 20px;
-    font-weight: 600;
-    padding: 0 30px;
-}
-main.post>section.post>div.icons{
-    display: flex;
-    flex-flow: row;
-    align-content: center;
-    border-bottom: #2A2121 1px solid;
-    padding: 5px 30px;
-}
-main.post>section.post>div.icons>span{
-    margin-right: 20px;
-}
-main.post>section.post>div.icons>span>img#delete{
-    margin-left: 20px;
-}
-main.post>section.post>div.icons>span>img{
-    width: 18px;
-    height: auto;
-}
-main.post>section.post>div.icons>div{
-border-left: #2A2121 1px solid;
-}
-main.post>section.post>span#description{
-    margin:5px 30px ;
-    font-size: 14px;
-    font-weight: 300;
-}
-main.post>section.post>span#copy{
-    margin:5px 30px ;
-    font-size: 18px;
-    font-weight: 200;
-}
-main.post>section.post>div#comments{
-    margin:5px 30px;
-    border-top: 1px solid #2A2121;
-    display: flex;
-    flex-flow: column;
-    align-items: end;
-}
-main.post>section.post>div#comments>span{
-   font-weight: 500;
-   font-size: 14px; 
-   align-self: flex-start;
-   margin-top: 2rem;
-}
-main.post>section.post>div#comments>span>span{
-    font-weight: 300;
-    font-size: 14px; 
-}
-main.post>section.post>div#comments>div>div{
-    display: flex;
-    flex-flow: row;
-}
-main.post>section.post>div#comments>div#writeComments>div>img{
-    width: 45px;
-    height: 45px;
-}
-main.post>section.post>div#comments>div#writeComments>div>div{
-    height: 90px;
-    width: 100%;
-    background-color: #E1DBD5;
-    border: 1px solid #2A2121;
-}
-main.post>section.post>div#comments>div#writeComments>div{
-    width: 100%;
-}
-main.post>section.post>div#comments>div#writeComments{
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-}
-main.post>section.post>div#comments>div#writeComments>div>div>textarea{
-    border: none;
-    background-color: #E1DBD5;
-    resize: none;
-}
-main.post>section.post>div#comments>div#writeComments>div>div>div{
-    display: flex;
-    flex-flow: row;
-    justify-content: end;
-}
-main.post>section.post>div#comments>div#writeComments>div>div>div>span#cancel{
-    font-size: 12px;
-    font-weight: 500;
-    color:#2A2121;
-}
-main.post>section.post>div#comments>div#writeComments>div>div>div>span#comment{
-    font-size: 12px;
-    font-weight: 500;
-    color:#E9A431;
-    margin: 0 10px;
-}
-main.post>section.post>div#comments>div#comment{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    margin: 20px 0;
-}
-main.post>section.post>div#comments>div#comment>div{
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-}
-main.post>section.post>div#comments>div#comment>div>img{
-    width: 45px;
-    height: 45px;
-}
-main.post>section.post>div#comments>div#comment>div>div{
-    width: 100%;
-    background-color:#E1DBD5 ;
-    height: 60px;
-    border: 1px solid #2A2121;
-}
-main.post>section.post>div#comments>div#comment>div.icons{
-    display: flex;
-    flex-flow: row;
-    margin-left: 50px;
-    font-size: 14px;
-    font-weight: 300px;
-}
-main.post>section.post>div#comments>div#comment>div.icons>img{
-    width: 18px;
-    height: 18px;
-}
-main.post>section.post>div#comments>div#comment>div.icons>img#corazon{
-    margin-left: 10px;
-}
-main.post>section.post>div#comments>div#answer{
-    width: 90%;
-    display: flex;
-    flex-flow: column;
-    margin-bottom: 20px;
-}
-main.post>section.post>div#comments>div#answer>div{
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-}
-main.post>section.post>div#comments>div#answer>div>img{
-    width: 45px;
-    height: 45px;
-}
-main.post>section.post>div#comments>div#answer>div>div{
-    width: 100%;
-    background-color:#E1DBD5 ;
-    height: 60px;
-    border: 1px solid #2A2121;
-}
-main.post>section.post>div#comments>div#answer>div.icons{
-    display: flex;
-    flex-flow: row;
-    margin-left: 50px;
-    font-size: 14px;
-    font-weight: 300px;
-}
-main.post>section.post>div#comments>div#answer>div.icons>img{
-    width: 18px;
-    height: 18px;
-}
-main.post>section.post>div#comments>div#answer>div.icons>img#corazon{
-    margin-left: 10px;
-}
-/* Post - Final main.post */
-
 
 /* Inicio footer */
 footer {
