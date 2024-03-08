@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        .error-message {
+            color: red;
+        }
+        span.error-message{
+            visibility: hidden;
+        }
+    </style>
+    <script src="jq/jquery-3.7.1.min.js" type="text/javascript"></script>
+    <script src="jq/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jq/jquery-ui-1.13.2.custom/jquery-ui.css">
+    <script src="jq/script.js"></script>
+</head>
+
+<body>
+    <h1>Formulario de Contacto</h1>
+    <form id="formulario-contacto">
+        <div>
+            <label for="nombre">Nombre y Apellidos:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <span id="nombreError" class="error-message">a</span>
+        </div>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <span id="emailError" class="error-message">a</span>
+        </div>
+        <div>
+            <label for="fecha">Fecha:</label><br>
+            <input type="text" id="fecha" name="fecha"><br><br>
+            <span id="fechaError" class="error-message"></span>
+        </div>
+        <div>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" maxlength="100"></textarea><br>
+            <span id="mensajeCount">Ha escrito 0 caracteres de 100. Dispone de 100 caracteres</span>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
