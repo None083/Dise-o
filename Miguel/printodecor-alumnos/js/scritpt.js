@@ -1,11 +1,11 @@
-$(document).ready(function() { //Esto hace que aparezca la barra de insta... y el chat de ayuda
+$(document).ready(function () { //Esto hace que aparezca la barra de insta... y el chat de ayuda
     $("nav#barra-social").fadeIn();
     $("nav#barra-social").css("position", "absolute");
     $("div#chat").fadeIn();
 
     //---------------------------------Slider-----------------------------//
 
-    var SliderModule = (function() {
+    var SliderModule = (function () {
         var pb = {}; //<-- esto crea un objeto¿?
         pb.elslider = $("#slider"); //<-- esto almacena el id slider en el objeto
         pb.items = {
@@ -16,7 +16,7 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
             nextSlider = 1; //<-- foto siguiente
         lengthSlider = pb.items.panels.length; //<--longitud total 
 
-        pb.init = function(settings) {
+        pb.init = function (settings) {
             this.settings = settings || { duration: 1500 };
             var loscontroles = '';
             SliderInit(); //<-- crea el constructor¿?¿?¿?¿?¿?
@@ -34,7 +34,7 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
             }
             $("#control-buttons").html(loscontroles); //FIN Esto es lo que crea lo botones en tiempo de ejecucion (kinda?)
 
-            $("#control-buttons img").click(function() { //Esto es lo que hace que cuando pulses cambie el boton
+            $("#control-buttons img").click(function () { //Esto es lo que hace que cuando pulses cambie el boton
                 if (currentSlider !== $(this).index()) {
                     cambiarPanel($(this).index());
                 }
@@ -46,7 +46,7 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
             imagenesAbajo();
 
 
-            $("#control-buttons img").mouseenter(function() { //preview de imagen
+            $("#control-buttons img").mouseenter(function () { //preview de imagen
 
                 var imgsource = $(pb.items.panels[$(this).index()]).children("img").attr("src");
                 if ($(this).parent().parent().children("picture").children("img").attr("src", "")) {
@@ -56,7 +56,7 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
                 }
             });
 
-            $("#control-buttons img").mouseleave(function() {
+            $("#control-buttons img").mouseleave(function () {
                 $(this).parent().parent().children("picture").children("img").attr("src", "");
                 $(this).parent().parent().children("picture").children("img").css("width", "0");
                 $(this).parent().parent().children("picture").children("img").css("height", "0");
@@ -66,34 +66,34 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
 
         } /*Esto es el main (Supongo)*/
 
-        var SliderInit = function() { //<-- define el constructor¿?¿?¿?¿?¿?
+        var SliderInit = function () { //<-- define el constructor¿?¿?¿?¿?¿?
             SliderInterval = setInterval(pb.startSlider, pb.settings.duration);
         }
 
         /*Esto es el ejercicio 1*/
-        var pararSlider = function() {
-                $(".slider-wrapper > li").mouseenter(function() {
-                    clearInterval(SliderInterval);
-                    console.log("Sesupone que esto para");
-                })
+        var pararSlider = function () {
+            $(".slider-wrapper > li").mouseenter(function () {
+                clearInterval(SliderInterval);
+                console.log("Sesupone que esto para");
+            })
 
-                $(".slider-wrapper > li").mouseleave(function() {
-                    SliderInit(); //NO ENTIENDO PORQUE NO FUNCIONA "setInterval(pb.startSlider, pb.settings.duration);" SI ES LA MISMA LINEA
-                    console.log("Se supone que estas fuera y deberia continuar");
-                })
-            }
-            /*Esto es el ejercicio 1*/
+            $(".slider-wrapper > li").mouseleave(function () {
+                SliderInit(); //NO ENTIENDO PORQUE NO FUNCIONA "setInterval(pb.startSlider, pb.settings.duration);" SI ES LA MISMA LINEA
+                console.log("Se supone que estas fuera y deberia continuar");
+            })
+        }
+        /*Esto es el ejercicio 1*/
 
-        var imagenesAbajo = function() { //para los circulos imagenes
+        var imagenesAbajo = function () { //para los circulos imagenes
             var i = 0;
-            $("#control-buttons img").each(function() {
+            $("#control-buttons img").each(function () {
                 var imgsource = $(pb.items.panels[i]).children("img").attr("src");
                 $(this).attr("src", imgsource)
                 i++;
             })
         }
 
-        pb.startSlider = function() { //<-- ¿?¿?¿?¿?¿?
+        pb.startSlider = function () { //<-- ¿?¿?¿?¿?¿?
             var paneles = pb.items.panels; //paneles del slider
             var controles = $("#control-buttons img");
 
@@ -114,8 +114,8 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
         }
 
         /*Esto es el ejercicio 2*/
-        var cambiarPanelBtnIz = function() {
-            $("input#botoniz").click(function() {
+        var cambiarPanelBtnIz = function () {
+            $("input#botoniz").click(function () {
                 var controles = $("#control-buttons img");
                 clearInterval(SliderInterval);
                 var paneles = pb.items.panels;
@@ -137,8 +137,8 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
             })
         }
 
-        var cambiarPanelBtnDer = function() {
-            $("input#botonder").click(function() {
+        var cambiarPanelBtnDer = function () {
+            $("input#botonder").click(function () {
 
                 var controles = $("div>#control-buttons img");
                 clearInterval(SliderInterval);
@@ -165,7 +165,7 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
         /*Esto es el ejercicio 2*/
 
 
-        var cambiarPanel = function(indice) {
+        var cambiarPanel = function (indice) {
             var controles = $("#control-buttons img");
             clearInterval(SliderInterval);
             var paneles = pb.items.panels;
@@ -195,7 +195,7 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
     SliderModule.init({ duration: 2000 });
     //---------------------------------Slider-----------------------------//
 
-    $("div#hamburger").click(function(e) { //hamburguesa
+    $("div#hamburger").click(function (e) { //hamburguesa
         e.preventDefault();
         if ($(this).siblings().css("display") == "none") {
             $("div#hamburger span").stop(false, true).animate({ //Saca el menu cambia la hamburguesa color y hace larga la linea del centro 
@@ -220,7 +220,7 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
         }
     })
 
-    $("ul#menu-toggle li:nth-child(3) > a,ul#menu-toggle li:nth-child(3) > span").click(function(e) { //menu dentro de menu
+    $("ul#menu-toggle li:nth-child(3) > a,ul#menu-toggle li:nth-child(3) > span").click(function (e) { //menu dentro de menu
 
         if ($(this).siblings("ul").css("display") == "none") { //si esta invisible
             $(this).siblings("ul").fadeIn();
@@ -235,7 +235,7 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
         }
     })
 
-    $(document).scroll(function() {
+    $(document).scroll(function () {
         if ($(document).scrollTop() >= 50) {
             $("ul#menu-toggle").slideUp(400); //Guarda el menu cuando se baja y resetea la hamburguesa
             $("div#hamburger span").stop(false, true).animate({
@@ -255,20 +255,20 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
         }
     })
 
-    $(window).resize(function() { //Cuando redimensionas la pagina todo vuelve al status quo
+    $(window).resize(function () { //Cuando redimensionas la pagina todo vuelve al status quo
         $("#hamburger").removeAttr("style");
         $('#menu-toggle').removeAttr("style");
         $('.line-ham').removeAttr("style");
         $("#menu-toggle li").children("ul").removeAttr("style");
     });
 
-    $('#header-chat1').click(function() { //Cuando le pulsas a la cabecera al chat sale hacia arriba
+    $('#header-chat1').click(function () { //Cuando le pulsas a la cabecera al chat sale hacia arriba
         $(this).siblings("div").slideToggle();
         $(this).css("display", "none");
         $('#chat').children().eq(1).css("display", "flex");
     })
 
-    $('#header-chat2 span').click(function() { //Cuando le pulsas a la cabecera al chat se oculta
+    $('#header-chat2 span').click(function () { //Cuando le pulsas a la cabecera al chat se oculta
 
         $("#header-chat2").siblings("div").slideToggle();
         $("#header-chat2").css("display", "none");
@@ -276,13 +276,13 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
 
     })
 
-    $('#window-chat textarea').keyup(function() { //Cuando pulsas teclas se actualiza el numero de textarea
+    $('#window-chat textarea').keyup(function () { //Cuando pulsas teclas se actualiza el numero de textarea
         var longitud = $(this).val().length;
         var restantes = 100 - longitud;
         $('#info-caracteres').html(" Dispone de " + restantes + " caracteres")
     })
 
-    $('#window-chat input').focusout(function() { //Cuando se quita el focus si la longitud es 0 te salta un error
+    $('#window-chat input').focusout(function () { //Cuando se quita el focus si la longitud es 0 te salta un error
         if ($(this).val().length == 0) {
             $(this).next().css({ visibility: "visible" });
         }
@@ -291,15 +291,15 @@ $(document).ready(function() { //Esto hace que aparezca la barra de insta... y e
         }
     })
 
-    $('section article.producto').mouseenter(function() { //para que salga y se oculte el boton
+    $('section article.producto').mouseenter(function () { //para que salga y se oculte el boton
         $(this).children('a').stop(true, true).slideDown();
     })
 
-    $('section article.producto').mouseleave(function() {
+    $('section article.producto').mouseleave(function () {
         $(this).children('a').stop(true, true).slideUp();
     })
 
-    $('#go-up').click(function() { //Para subir la pagina
+    $('#go-up').click(function () { //Para subir la pagina
 
         $("html, body").animate({ scrollTop: 0 }, 1000);
     });

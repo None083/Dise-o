@@ -130,7 +130,7 @@ section h1 {
 .control-prev,
 .control-next {
     position: absolute;
-    top: 45%;
+    top: 41%;
     transform: translateY(-50%);
     cursor: pointer;
 	z-index: 1000;
