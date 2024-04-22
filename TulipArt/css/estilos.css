@@ -246,6 +246,7 @@ div#video-promo{
     flex-flow: column;
 }
 
+
 div#video-promo div#controles{
     display: flex;
     flex-flow: row wrap;
@@ -491,7 +492,9 @@ main#index>section#galery-index>article.post>ul.icons-post>li {
 /* Index - Final main#index página inicial */
 
 /* Login - Inicio main#login */
+
 header.white {
+    margin-top: 1rem;
     background-color: #EEECE8;
     display: flex;
     flex-flow: row;
@@ -501,7 +504,17 @@ header.white {
 header.white>a {
     display: flex;
     flex-flow: row;
-    align-items: center;
+    margin-bottom: 1rem;
+}
+
+header.white>a>picture{
+    width: 36px;
+    height: 36px;
+}
+
+header.white>a>picture>img{
+    width: 100%;
+    height: auto;
 }
 
 header.white>a>span.title {
@@ -532,10 +545,13 @@ main#login form {
     width: 80%;
 }
 
+main#login form>div.titulo{
+    margin-bottom: 1rem;
+}
+
 main#login form>div>span.h1 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
-    margin: 5px 0;
 }
 
 main#login form>button {
@@ -560,7 +576,7 @@ main#login form>input[type="text"],
 main#login form>input[type="password"] {
     height: 40px;
     background-color: #E1DBD5;
-    border: #2A2121 2px solid;
+    border: #2A2121 1px solid;
     border-radius: 3px;
 }
 
@@ -597,14 +613,11 @@ main#login form input[type="checkbox"]:checked+label>div {
     background-image: url(https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/square-checked.svg);
 }
 
-main#login form>button {
-    height: 40px;
-}
-
 main#login form>div#checkform {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 main#login form>div#checkform>a {
@@ -614,7 +627,9 @@ main#login form>div#checkform>a {
 main#login form>div#checkform>label {
     text-align: left;
 }
-
+main#login form>button {
+    height: 40px;
+}
 section.contactWith {
     width: 80%;
 }
@@ -827,6 +842,24 @@ main.submit  form  textarea{
     margin: 10px 0;
 }
 
+main.submit form >div#columns>div#column1{
+    margin-bottom: 1rem;
+}
+
+main.submit form >div#columns>div#column1 label{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+main.submit form >div#columns>div#column2{
+    margin-top: 1rem;
+}
+
+main.submit form >div#columns>div#column2 label{
+    font-weight: 300;
+    font-size: 10px;
+}
+
 main.submit  form > button{
     margin-bottom: 4rem;
     margin-top: 2rem;
@@ -837,14 +870,7 @@ main.submit  form > button{
     border: none;
     border-radius: 3px;
 }
-main.submit form >div#columns>div#column1 label{
-    font-weight: 400;
-    font-size: 12px;
-}
-main.submit form >div#columns>div#column2 label{
-    font-weight: 300;
-    font-size: 10px;
-}
+
 /* Submit - Final main.submit */
 
 /* Post - Inicio main.post */
@@ -1532,6 +1558,12 @@ footer>div#other-info-footer>span {
         flex: 25%;
     }
 
+    /* Post main tablet */
+
+    main.post>section.post>img#image-post{
+        padding: 0 2rem;
+    }
+
     /* Incio footer tablet */
     footer {
         padding-left: 5rem;
@@ -1551,7 +1583,7 @@ footer>div#other-info-footer>span {
 /*Final versión tablet*/
 
 /*Versión desktop*/
-@media(width > 1024px) {
+@media(width > 1065px) {
 
     /*Inicio header desktop*/
     header>a#nombreWeb {
@@ -1728,6 +1760,7 @@ footer>div#other-info-footer>span {
         display: flex;
         flex-flow: row;
         justify-content: space-between;
+        margin-top: 2rem;
     }
 
     main#login>div>form>div.titulo>a.close-desktop {
@@ -1781,6 +1814,11 @@ footer>div#other-info-footer>span {
     main.submit form >div#columns{
         display: flex;
         flex-flow: row nowrap;
+        margin-top: 1rem;
+    }
+    main.submit form >div#columns>div#column2{
+        margin-top: 0;
+        margin-left: 1rem;
     }
     main.submit form >div#columns>div#column1 ,main.submit form >div#columns>div#column2 {
         width: 49%;
@@ -1806,6 +1844,9 @@ footer>div#other-info-footer>span {
         align-items: flex-start;
         justify-content: space-around;
         width: 90%;
+    }
+    main.post>section.post>img#image-post{
+        padding: 0 2rem;
     }
     main.post>aside{
         display: flex;

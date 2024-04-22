@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -185,13 +185,13 @@ header>nav#capa-buscador>img#equis {
     cursor: pointer;
 }
 
-header>nav#capa-buscador>div{
+header>nav#capa-buscador>div {
     width: 70%;
     display: flex;
     align-items: center;
 }
 
-header>nav#capa-buscador>div>input{
+header>nav#capa-buscador>div>input {
     width: 90%;
     height: 40px;
     background-color: #E1DBD5;
@@ -204,12 +204,12 @@ header>nav#capa-buscador>div>input{
     margin-right: 0.5rem;
 }
 
-header>nav#capa-buscador>div>input:focus{
+header>nav#capa-buscador>div>input:focus {
     border: #E9A431 1px solid;
-    outline: none; 
+    outline: none;
 }
 
-header>nav#capa-buscador>div>input::placeholder{
+header>nav#capa-buscador>div>input::placeholder {
     color: #2A2121;
     font-weight: 300;
 }
@@ -237,7 +237,7 @@ header>nav#capa-buscador>ul#tags>li {
 /* Final header */
 
 /*Index - Inicio video-promo*/
-div#video-promo{
+div#video-promo {
     display: flex;
     background: linear-gradient(#E9A431, #D83C2D);
     width: 300px;
@@ -246,66 +246,78 @@ div#video-promo{
     flex-flow: column;
     position: absolute;
     z-index: 999;
-    bottom: 185px;
+    bottom: 200px;
     right: 10px;
+    position: fixed;
 }
 
-div#video-promo img{
+div#video-promo img#equis-video {
     width: 25px;
     height: auto;
     position: absolute;
     top: 5px;
     right: 10px;
+    cursor: pointer;
 }
 
-div#video-promo div#controles{
+div#video-promo div#controles {
     display: flex;
     flex-flow: row wrap;
     margin-left: 20px;
     justify-content: space-between;
 }
 
-div#video-promo div#controles > button > span{
+div#video-promo div#controles>button>span {
     display: none;
 }
 
-div#video-promo div#controles > input#volume{
+div#video-promo div#controles>input#volume {
     width: 60px;
 }
 
-div#video-promo div#controles > button#fullscreen{
+div#video-promo div#controles>button#fullscreen {
     margin-left: auto;
     margin-right: 20px;
 }
 
-div#video-promo #video{
+div#video-promo #video {
     width: 90%;
     height: auto;
     margin: auto;
     margin-top: 30px;
 }
 
-div#video-promo div#progreso{
+div#video-promo div#progreso {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 0.2rem 0.5rem 0 0.5rem;
-    flex: 10%;
+    flex: 100%;
 }
 
-div#video-promo .boton{
+div#video-promo div#progreso>input#progress {
+    width: 210px;
+}
+
+div#video-promo div#progreso>span {
+    font-size: small;
+}
+
+div#video-promo .boton {
     border: none;
     margin: 10px 0;
     background: none;
     cursor: pointer;
 }
 
-div#video-promo .visible{
+div#video-promo .visible {
     display: block;
 }
-div#video-promo .oculto{
+
+div#video-promo .oculto {
     display: none;
 }
+
 /*Index - Final video-promo*/
 
 /* Index - Inicio main página inicial */
@@ -333,7 +345,7 @@ main#index>nav#tab>span {
 }
 
 /* Inicio banner login o join */
-main#index > div#joinOrLogin{
+main#index>div#joinOrLogin {
     position: fixed;
     background-color: rgba(179, 207, 205, 0.9);
     width: 100%;
@@ -349,7 +361,7 @@ main#index > div#joinOrLogin{
     z-index: 1;
 }
 
-main#index > div#joinOrLogin > span{
+main#index>div#joinOrLogin>span {
     flex: 100%;
     margin-bottom: 1.5rem;
     color: #2A2121;
@@ -358,7 +370,7 @@ main#index > div#joinOrLogin > span{
     padding: 0 3rem;
 }
 
-main#index > div#joinOrLogin > a.btn-joinOrLogin{
+main#index>div#joinOrLogin>a.btn-joinOrLogin {
     color: #2A2121;
     border: 1px solid #2A2121;
     width: 7rem;
@@ -371,21 +383,22 @@ main#index > div#joinOrLogin > a.btn-joinOrLogin{
     font-weight: 700;
 }
 
-main#index > div#joinOrLogin > img{
+main#index>div#joinOrLogin>img {
     position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
 }
 
-main#index > div#joinOrLogin > a.btn-joinOrLogin:nth-child(3){
+main#index>div#joinOrLogin>a.btn-joinOrLogin:nth-child(3) {
     margin-right: 1rem;
 }
 
-main#index > div#joinOrLogin > a.btn-joinOrLogin:nth-child(4){
+main#index>div#joinOrLogin>a.btn-joinOrLogin:nth-child(4) {
     background-color: #E9A431;
     border: 1px solid #E9A431;
 }
+
 /* Final banner login o join */
 
 main#index>section#galery-index>article.post {
@@ -393,7 +406,7 @@ main#index>section#galery-index>article.post {
     flex-flow: column;
     flex: 100%;
     position: relative;
-    
+
 }
 
 main#index>section#galery-index>article.post>div.capa-post {
@@ -429,7 +442,7 @@ main#index>section#galery-index>article.post>nav.menu-post>div.content {
     box-shadow: -15px 15px 10px -15px #2A2121;
 }
 
-main#index>section#galery-index>article.post>nav.menu-post>div.content>a{
+main#index>section#galery-index>article.post>nav.menu-post>div.content>a {
     display: flex;
     align-items: center;
     color: #2A2121;
@@ -438,11 +451,12 @@ main#index>section#galery-index>article.post>nav.menu-post>div.content>a{
     margin-bottom: 1rem;
 }
 
-main#index>section#galery-index>article.post>nav.menu-post>div.content>a>img{
+main#index>section#galery-index>article.post>nav.menu-post>div.content>a>img {
     width: 19px;
     height: auto;
     margin-right: 0.5rem;
 }
+
 /*Final mini menu post*/
 
 main#index>section#galery-index>article.post>div.post-info {
@@ -506,6 +520,7 @@ main#index>section#galery-index>article.post>ul.icons-post>li {
     margin-right: 0.5rem;
     cursor: pointer;
 }
+
 /* Index - Final main#index página inicial */
 
 /* Login - Inicio main#login */
@@ -535,6 +550,7 @@ main#login {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 main#login>div {
@@ -699,6 +715,7 @@ main#login div.or {
     min-width: 325px;
     max-width: 425px;
 }
+
 /* Login - Final main#login */
 
 /* Upload - Inicio main */
@@ -711,7 +728,7 @@ main.upload {
     padding-top: 5rem;
 }
 
-main.upload > form{
+main.upload>form {
     display: flex;
     flex-flow: column;
     width: 330px;
@@ -723,18 +740,18 @@ main.upload > form{
     padding: 1rem;
 }
 
-main.upload > form > div#tulipanes-upload{
+main.upload>form>div#tulipanes-upload {
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-main.upload > form > div#tulipanes-upload > img{
+main.upload>form>div#tulipanes-upload>img {
     width: 75px;
     height: auto;
 }
 
-main.upload > form > button{
+main.upload>form>button {
     background-color: #E9A431;
     font-size: 14px;
     font-weight: 700;
@@ -744,16 +761,18 @@ main.upload > form > button{
     height: 40px;
     width: 270px;
 }
+
 /* Upload - Final main */
 
 /* Submit - Inicio main.submit */
-div#contenedor2{
+div#contenedor2 {
     font-family: "Kumbh Sans", sans-serif;
     background-color: #EEECE8;
-    height:100vh;
+    height: 100vh;
     width: 100%;
 }
-header.submit{
+
+header.submit {
     background-color: #EEECE8;
     display: flex;
     flex-flow: row;
@@ -764,11 +783,13 @@ header.submit{
     box-shadow: 0px 15px 5px -15px #2A2121;
 
 }
-header.submit >span.h1 {
+
+header.submit>span.h1 {
     font-size: 28px;
     font-weight: 700;
     color: #2A2121;
 }
+
 main.submit {
     display: flex;
     flex-flow: column nowrap;
@@ -776,35 +797,40 @@ main.submit {
     align-items: center;
 
 }
-main.submit >form{
+
+main.submit>form {
     display: flex;
     flex-flow: column;
     width: 80%;
     max-width: 500px;
 }
 
-main.submit > form > div.checkbox {
+main.submit>form>div.checkbox {
     display: flex;
     flex-flow: row;
     margin: 10px 0;
 }
 
-main.submit > div#imageContainer{
-width: 80%;
-max-width: 500px;
+main.submit>div#imageContainer {
+    width: 80%;
+    max-width: 500px;
 }
-main.submit > div#imageContainer>img{
-width: 100%;
-height: auto;
+
+main.submit>div#imageContainer>img {
+    width: 100%;
+    height: auto;
 }
-main.submit  form input[type="checkbox"]{
+
+main.submit form input[type="checkbox"] {
     display: none;
 }
-main.submit  form input[type="checkbox"] + label{
+
+main.submit form input[type="checkbox"]+label {
     display: flex;
     flex-flow: row;
 }
-main.submit  form input[type="checkbox"] + label > div{
+
+main.submit form input[type="checkbox"]+label>div {
     min-width: 22px;
     min-height: 22px;
     margin-right: 5px;
@@ -813,39 +839,46 @@ main.submit  form input[type="checkbox"] + label > div{
     margin-right: 1rem;
     background-size: cover;
 }
-main.submit  form input[type="checkbox"]:checked + label > div{
+
+main.submit form input[type="checkbox"]:checked+label>div {
     background-image: url(https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/square-checked.svg);
     background-repeat: no-repeat;
 }
-div#raya{
+
+div#raya {
     width: 100%;
     border-top: 1px solid #2A2121;
 }
-main.submit form  label{
+
+main.submit form label {
     font-weight: bold;
     margin: 5px 0;
 }
-main.submit form  input{
+
+main.submit form input {
     margin: 10px 0;
 }
-main.submit  form  input[type="text"]{
+
+main.submit form input[type="text"] {
     height: 40px;
     background-color: #E1DBD5;
     border: #2A2121 1px solid;
     border-radius: 3px;
 }
-main.submit form  input[type="text"]:focus{
+
+main.submit form input[type="text"]:focus {
     border: #E9A431 1px solid;
-    outline: none; 
+    outline: none;
 }
-main.submit  form  textarea{
+
+main.submit form textarea {
     background-color: #E1DBD5;
     border: #2A2121 1px solid;
     border-radius: 3px;
     margin: 10px 0;
 }
 
-main.submit  form > button{
+main.submit form>button {
     margin-bottom: 4rem;
     margin-top: 2rem;
     height: 40px;
@@ -855,228 +888,269 @@ main.submit  form > button{
     border: none;
     border-radius: 3px;
 }
-main.submit form >div#columns>div#column1 label{
+
+main.submit form>div#columns>div#column1 label {
     font-weight: 400;
     font-size: 12px;
 }
-main.submit form >div#columns>div#column2 label{
+
+main.submit form>div#columns>div#column2 label {
     font-weight: 300;
     font-size: 10px;
 }
+
 /* Submit - Final main.submit */
 
 /* Post - Inicio main.post */
-main.post{
+main.post {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
-main.post>section.post{
+
+main.post>section.post {
     display: flex;
     flex-flow: column;
     max-width: 700px;
     background-color: #EEECE8;
 }
-main.post>aside{
+
+main.post>aside {
     display: none;
     background-color: #EEECE8;
 }
-main.post>section.post>div#user{
+
+main.post>section.post>div#user {
     height: 5rem;
     display: flex;
     flex-flow: row;
     align-items: center;
 }
-main.post>section.post>div#user img{
+
+main.post>section.post>div#user img {
     width: 40px;
     height: auto;
     margin-left: 30px;
     margin-right: 5px;
 }
-main.post>section.post>div#user>div#nombre{
+
+main.post>section.post>div#user>div.nombre {
     display: flex;
     flex-flow: column;
 }
-main.post>section.post>div#user>div#nombre span#nombre{
+
+main.post>section.post>div#user>div.nombre span.nombre {
     font-size: 14px;
     font-weight: 600;
     color: #2A2121;
 }
 
-main.post>section.post>div#user>div#nombre>span#fecha{
+main.post>section.post>div#user>div.nombre>span.fecha {
     font-size: 14px;
     font-weight: 300;
 }
-main.post>section.post>img#image-post{
+
+main.post>section.post>img#image-post {
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
 }
-main.post>section.post>div#option{
+
+main.post>section.post>div#option {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
 }
-main.post>section.post>div#option>div{
+
+main.post>section.post>div#option>div {
     display: flex;
 }
-main.post>section.post>div#option>div>img{
+
+main.post>section.post>div#option>div>img {
     width: 26px;
     height: auto;
 }
 
-main.post>section.post>div#option>div#der>img{
+main.post>section.post>div#option>div#der>img {
     margin-left: 0.5rem;
 }
 
-main.post>section.post>span#title{
+main.post>section.post>span#title {
     font-size: 20px;
     font-weight: 600;
     padding: 0 30px;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
-main.post>section.post>div.icons{
+
+main.post>section.post>div.icons {
     display: flex;
     flex-flow: row;
     align-content: center;
     border-bottom: #2A2121 1px solid;
     padding: 5px 30px;
 }
-main.post>section.post>div.icons>span{
+
+main.post>section.post>div.icons>span {
     display: flex;
     margin-right: 20px;
 }
-main.post>section.post>div.icons>span>img#delete{
+
+main.post>section.post>div.icons>span>img.delete {
     margin-left: 20px;
 }
-main.post>section.post>div.icons>span>img{
+
+main.post>section.post>div.icons>span>img {
     width: 18px;
     height: auto;
     margin-right: 0.5rem;
     margin-bottom: 0.3rem;
 }
-main.post>section.post>div.icons>div{
-border-left: #2A2121 1px solid;
+
+main.post>section.post>div.icons>div {
+    border-left: #2A2121 1px solid;
 }
-main.post>section.post>span#description{
-    margin: 15px 30px ;
+
+main.post>section.post>span#description {
+    margin: 15px 30px;
     font-size: 14px;
     font-weight: 300;
 }
-main.post>section.post>span#copy{
-    margin:5px 30px ;
+
+main.post>section.post>span#copy {
+    margin: 5px 30px;
     font-size: 12px;
     font-weight: 200;
 }
-main.post>section.post>div#comments{
-    margin:5px 30px;
+
+main.post>section.post>div#comments {
+    margin: 5px 30px;
     border-top: 1px solid #2A2121;
     display: flex;
     flex-flow: column;
     align-items: end;
 }
-main.post>section.post>div#comments>span{
-   font-weight: 500;
-   font-size: 14px; 
-   align-self: flex-start;
-   margin-top: 1rem;
-   margin-bottom: 1rem;
+
+main.post>section.post>div#comments>span {
+    font-weight: 500;
+    font-size: 14px;
+    align-self: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-main.post>section.post>div#comments>span>span{
+
+main.post>section.post>div#comments>span>span {
     font-weight: 300;
-    font-size: 14px; 
+    font-size: 14px;
 }
-main.post>section.post>div#comments>div>div{
+
+main.post>section.post>div#comments>div>div {
     display: flex;
     flex-flow: row;
 }
-main.post>section.post>div#comments>div#writeComments{
+
+main.post>section.post>div#comments>div#writeComments {
     display: flex;
     flex-flow: row;
     width: 100%;
 }
-main.post>section.post>div#comments>div#writeComments>div{
+
+main.post>section.post>div#comments>div#writeComments>div {
     width: 100%;
 }
-main.post>section.post>div#comments>div#writeComments>div>img{
+
+main.post>section.post>div#comments>div#writeComments>div>img {
     width: 40px;
     height: 40px;
     margin-right: 0.5rem;
 }
-main.post>section.post>div#comments>div#writeComments>div>div{
+
+main.post>section.post>div#comments>div#writeComments>div>div {
     height: 90px;
     width: 100%;
     background-color: #E1DBD5;
     border: 1px solid #2A2121;
     border-radius: 3px;
 }
-main.post>section.post>div#comments>div#writeComments>div>div>textarea{
+
+main.post>section.post>div#comments>div#writeComments>div>div>textarea {
     border: none;
     background-color: #E1DBD5;
     resize: none;
 }
-main.post>section.post>div#comments>div#writeComments>div>div>textarea::placeholder{
+
+main.post>section.post>div#comments>div#writeComments>div>div>textarea::placeholder {
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 200;
 }
-main.post>section.post>div#comments>div#writeComments>div>div>div{
+
+main.post>section.post>div#comments>div#writeComments>div>div>div {
     display: flex;
     flex-flow: row;
     justify-content: end;
 }
-main.post>section.post>div#comments>div#writeComments>div>div>div>span#cancel{
+
+main.post>section.post>div#comments>div#writeComments>div>div>div>span#cancel {
     font-size: 12px;
     font-weight: 500;
-    color:#2A2121;
+    color: #2A2121;
 }
-main.post>section.post>div#comments>div#writeComments>div>div>div>span#comment{
+
+main.post>section.post>div#comments>div#writeComments>div>div>div>span.comment {
     font-size: 12px;
     font-weight: 500;
     color: #D83C2D;
     margin: 0 10px;
 }
-main.post>section.post>div#comments>div#comment{
+
+main.post>section.post>div#comments>div.comment {
     width: 100%;
     display: flex;
     flex-flow: column;
     margin: 20px 0;
 }
-main.post>section.post>div#comments>div#comment>div{
+
+main.post>section.post>div#comments>div#comment>div {
     display: flex;
     flex-flow: row;
 }
-main.post>section.post>div#comments>div#comment>div>img{
+
+main.post>section.post>div#comments>div.comment>div>img {
     width: 40px;
     height: 40px;
     margin-right: 0.5rem;
 }
-main.post>section.post>div#comments>div#comment>div>div{
+
+main.post>section.post>div#comments>div.comment>div>div {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    background-color:#E1DBD5;
+    background-color: #E1DBD5;
     height: 60px;
     border: 1px solid #2A2121;
     padding: 0.5rem;
     align-items: baseline;
 }
-main.post>section.post>div#comments>div#comment>div>div>span:nth-child(1){
+
+main.post>section.post>div#comments>div.comment>div>div>span:nth-child(1) {
     font-size: 14px;
     font-weight: 500;
     margin-right: 0.5rem;
 }
-main.post>section.post>div#comments>div#comment>div>div>span:nth-child(2){
+
+main.post>section.post>div#comments>div.comment>div>div>span:nth-child(2) {
     font-size: 10px;
     font-weight: 200;
 }
-main.post>section.post>div#comments>div#comment>div>div>span:nth-child(3){
+
+main.post>section.post>div#comments>div.comment>div>div>span:nth-child(3) {
     flex: 100%;
     font-size: 12px;
 }
-main.post>section.post>div#comments>div#comment>div.icons{
+
+main.post>section.post>div#comments>div.comment>div.icons {
     display: flex;
     flex-flow: row;
     margin-top: 0.3rem;
@@ -1084,31 +1158,37 @@ main.post>section.post>div#comments>div#comment>div.icons{
     font-size: 14px;
     font-weight: 300px;
 }
-main.post>section.post>div#comments>div#comment>div.icons>img{
+
+main.post>section.post>div#comments>div.comment>div.icons>img {
     width: 18px;
     height: 18px;
 }
-main.post>section.post>div#comments>div#comment>div.icons>img#corazon{
+
+main.post>section.post>div#comments>div.comment>div.icons>img.corazon {
     margin-left: 10px;
 }
-main.post>section.post>div#comments>div#answer{
+
+main.post>section.post>div#comments>div#answer {
     width: 90%;
     display: flex;
     flex-flow: column;
     margin-bottom: 20px;
 }
-main.post>section.post>div#comments>div#answer>div{
+
+main.post>section.post>div#comments>div#answer>div {
     display: flex;
     flex-flow: row;
 }
-main.post>section.post>div#comments>div#answer>div>img{
+
+main.post>section.post>div#comments>div#answer>div>img {
     width: 40px;
     height: 40px;
     margin-right: 0.5rem;
 }
-main.post>section.post>div#comments>div#answer>div>div{
+
+main.post>section.post>div#comments>div#answer>div>div {
     width: 100%;
-    background-color:#E1DBD5 ;
+    background-color: #E1DBD5;
     height: 60px;
     border: 1px solid #2A2121;
     display: flex;
@@ -1116,21 +1196,25 @@ main.post>section.post>div#comments>div#answer>div>div{
     padding: 0.5rem;
     align-items: baseline;
 }
-main.post>section.post>div#comments>div#answer>div>div>span:nth-child(1){
+
+main.post>section.post>div#comments>div#answer>div>div>span:nth-child(1) {
     font-size: 14px;
     font-weight: 500;
     color: #D83C2D;
     margin-right: 0.5rem;
 }
-main.post>section.post>div#comments>div#answer>div>div>span:nth-child(2){
+
+main.post>section.post>div#comments>div#answer>div>div>span:nth-child(2) {
     font-size: 10px;
     font-weight: 200;
 }
-main.post>section.post>div#comments>div#answer>div>div>span:nth-child(3){
+
+main.post>section.post>div#comments>div#answer>div>div>span:nth-child(3) {
     font-size: 12px;
     flex: 100%;
 }
-main.post>section.post>div#comments>div#answer>div.icons{
+
+main.post>section.post>div#comments>div#answer>div.icons {
     display: flex;
     flex-flow: row;
     margin-top: 0.3rem;
@@ -1138,147 +1222,151 @@ main.post>section.post>div#comments>div#answer>div.icons{
     font-size: 14px;
     font-weight: 300px;
 }
-main.post>section.post>div#comments>div#answer>div.icons>img{
+
+main.post>section.post>div#comments>div#answer>div.icons>img {
     width: 18px;
     height: 18px;
 }
-main.post>section.post>div#comments>div#answer>div.icons>img#corazon{
+
+main.post>section.post>div#comments>div#answer>div.icons>img.corazon {
     margin-left: 10px;
 }
+
 /* Post - Final main.post */
 
 /* Profile - Inicio main#profile-page */
-main#profile-page{
+main#profile-page {
     display: flex;
     flex-flow: column;
 }
 
-main#profile-page > section#profile-stuff{
+main#profile-page>section#profile-stuff {
     position: relative;
 }
 
-main#profile-page > section#profile-stuff > div#banner{
+main#profile-page>section#profile-stuff>div#banner {
     background-color: #B3CFCD;
     width: 100%;
     height: 140px;
 }
 
-main#profile-page > section#profile-stuff > img{
+main#profile-page>section#profile-stuff>img {
     position: absolute;
     top: 2rem;
     left: 1rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile{
+main#profile-page>section#profile-stuff>nav#info-profile {
     padding: 0 2rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#name-pack{
+main#profile-page>section#profile-stuff>nav#info-profile>div#name-pack {
     margin-top: 2rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#name-pack > span#profile-name{
+main#profile-page>section#profile-stuff>nav#info-profile>div#name-pack>span#profile-name {
     font-size: 20px;
     font-weight: 600;
     margin-right: 0.5rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#name-pack > span#username{
+main#profile-page>section#profile-stuff>nav#info-profile>div#name-pack>span#username {
     font-size: 10px;
     font-weight: 300;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#icons-profile{
+main#profile-page>section#profile-stuff>nav#info-profile>div#icons-profile {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#icons-profile > a:nth-child(1){
+main#profile-page>section#profile-stuff>nav#info-profile>div#icons-profile>a:nth-child(1) {
     margin-right: 1rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#icons-profile > a > img{
+main#profile-page>section#profile-stuff>nav#info-profile>div#icons-profile>a>img {
     width: 26px;
     height: auto;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#aboutme-profile{
+main#profile-page>section#profile-stuff>nav#info-profile>div#aboutme-profile {
     display: flex;
     flex-flow: column nowrap;
     flex: 100%;
     margin: 1rem 0;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#aboutme-profile > span:nth-child(1){
+main#profile-page>section#profile-stuff>nav#info-profile>div#aboutme-profile>span:nth-child(1) {
     font-size: 14px;
     margin-bottom: 0.3rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#aboutme-profile > span:nth-child(2),
-main#profile-page > section#profile-stuff > nav#info-profile > div#aboutme-profile > span:nth-child(3){
+main#profile-page>section#profile-stuff>nav#info-profile>div#aboutme-profile>span:nth-child(2),
+main#profile-page>section#profile-stuff>nav#info-profile>div#aboutme-profile>span:nth-child(3) {
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 0.2rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info{
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info {
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 1rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info > div#follows{
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info>div#follows {
     border-right: 1px solid #2A2121;
     padding-right: 1rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info > div#pieces{
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info>div#pieces {
     border-right: 1px solid #2A2121;
     padding: 0 1rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info > div#views{
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info>div#views {
     padding-left: 1rem;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info > div#follows > span.numbers,
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info > div#pieces > span.numbers,
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info > div#views > span.numbers{
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info>div#follows>span.numbers,
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info>div#pieces>span.numbers,
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info>div#views>span.numbers {
     font-size: 12px;
     font-weight: 600;
 }
 
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info > div#follows > span.numbers-info-name,
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info > div#pieces > span.numbers-info-name,
-main#profile-page > section#profile-stuff > nav#info-profile > div#numbers-info > div#views > span.numbers-info-name{
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info>div#follows>span.numbers-info-name,
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info>div#pieces>span.numbers-info-name,
+main#profile-page>section#profile-stuff>nav#info-profile>div#numbers-info>div#views>span.numbers-info-name {
     font-size: 12px;
     font-weight: 300;
 }
 
 /* Profile - Inicio main#profile-page galería */
 
-main#profile-page > section#profile-gallery{
+.wide-pic {
+    grid-column: span 2;
+}
+
+main#profile-page>section#profile-gallery {
     background-color: #2A2121;
-    padding: 1rem;
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    padding: 1rem 2rem;
 }
 
-main#profile-page > section#profile-gallery>article.post {
-    display: flex;
-    flex-flow: column;
-    flex: 100%;
+main#profile-page>section#profile-gallery>article.post {
     position: relative;
-    flex: 40%;
-    margin: 0.5rem;
-    align-content: space-between;
 }
 
-main#profile-page > section#profile-gallery>article.post>div.capa-post {
+main#profile-page>section#profile-gallery>article.post>div.capa-post {
     position: absolute;
     background-color: rgba(238, 236, 232, 0.8);
     width: 100%;
@@ -1286,7 +1374,7 @@ main#profile-page > section#profile-gallery>article.post>div.capa-post {
     display: none;
 }
 
-main#profile-page > section#profile-gallery>article.post>div.post-info {
+main#profile-page>section#profile-gallery>article.post>div.post-info {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -1295,29 +1383,30 @@ main#profile-page > section#profile-gallery>article.post>div.post-info {
     display: none;
 }
 
-main#profile-page > section#profile-gallery>article.post>div.post-info>a>img {
+main#profile-page>section#profile-gallery>article.post>div.post-info>a>img {
     margin: 0.5rem;
+
 }
 
-main#profile-page > section#profile-gallery>article.post>div.post-info>div.titulo-user {
+main#profile-page>section#profile-gallery>article.post>div.post-info>div.titulo-user {
     display: flex;
     flex-flow: column;
     flex: 10%;
 }
 
-main#profile-page > section#profile-gallery>article.post>div.post-info>div.titulo-user>a>span.titulo-obra {
+main#profile-page>section#profile-gallery>article.post>div.post-info>div.titulo-user>a>span.titulo-obra {
     color: #2A2121;
     font-weight: 600;
     font-size: 14px;
 }
 
-main#profile-page > section#profile-gallery>article.post>div.post-info>div.titulo-user>a>span.nombre-user {
+main#profile-page>section#profile-gallery>article.post>div.post-info>div.titulo-user>a>span.nombre-user {
     color: #2A2121;
     font-weight: 500;
     font-size: 12px;
 }
 
-main#profile-page > section#profile-gallery>article.post>div.post-info>span.boton-seguir {
+main#profile-page>section#profile-gallery>article.post>div.post-info>span.boton-seguir {
     font-size: 12px;
     font-weight: 600;
     margin-right: 0.5rem;
@@ -1326,22 +1415,26 @@ main#profile-page > section#profile-gallery>article.post>div.post-info>span.boto
     border: 1px solid #2A2121;
     border-radius: 3px;
     cursor: pointer;
-    
+
 }
 
-main#profile-page > section#profile-gallery>article.post>div.post-info>img {
+main#profile-page>section#profile-gallery>article.post>div.post-info>img {
     margin-right: 0.5rem;
     cursor: pointer;
 }
 
-main#profile-page > section#profile-gallery>article.post>picture.obra-arte>img {
-    width: 100%;
-    height: auto;
+main#profile-page>section#profile-gallery>article.post>picture.obra-arte>img {
     cursor: pointer;
     height: 150px;
+    height: 200px;
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    object-fit: cover;
 }
 
-main#profile-page > section#profile-gallery>article.post>ul.icons-post {
+main#profile-page>section#profile-gallery>article.post>ul.icons-post {
     display: flex;
     flex-flow: row;
     margin: 0.5rem 1rem;
@@ -1351,13 +1444,14 @@ main#profile-page > section#profile-gallery>article.post>ul.icons-post {
     display: none;
 }
 
-main#profile-page > section#profile-gallery>article.post>ul.icons-post>li {
+main#profile-page>section#profile-gallery>article.post>ul.icons-post>li {
     margin-right: 0.5rem;
     cursor: pointer;
 }
+
 /* Profile - Final main#profile-page galería */
 
-main#profile-page > div#load-more{
+main#profile-page>div#load-more {
     background-color: #2A2121;
     flex: 100%;
     text-align: center;
@@ -1365,21 +1459,22 @@ main#profile-page > div#load-more{
     padding: 1rem;
 }
 
-main#profile-page > div#load-more > span{
+main#profile-page>div#load-more>span {
     color: #E1DBD5;
     font-size: 15px;
     font-weight: 500;
 }
+
 /* Profile - Final main#profile-page */
 
 /* Cookies - Inicio main#cookies */
-main#cookies{
+main#cookies {
     display: flex;
     flex-flow: column;
     padding: 2rem;
 }
 
-main#cookies > div#accept-conditions{
+main#cookies>div#accept-conditions {
     position: fixed;
     background-color: rgba(179, 207, 205, 0.9);
     width: 100%;
@@ -1394,7 +1489,7 @@ main#cookies > div#accept-conditions{
     align-content: center;
 }
 
-main#cookies > div#accept-conditions > span:nth-child(1){
+main#cookies>div#accept-conditions>span:nth-child(1) {
     flex: 100%;
     margin-bottom: 1.5rem;
     color: #2A2121;
@@ -1402,7 +1497,7 @@ main#cookies > div#accept-conditions > span:nth-child(1){
     font-weight: 500;
 }
 
-main#cookies > div#accept-conditions > span.btn-cookies{
+main#cookies>div#accept-conditions>span.btn-cookies {
     color: #2A2121;
     border: 1px solid #2A2121;
     width: 7rem;
@@ -1415,25 +1510,26 @@ main#cookies > div#accept-conditions > span.btn-cookies{
     font-weight: 700;
 }
 
-main#cookies > div#accept-conditions > span:nth-child(2){
+main#cookies>div#accept-conditions>span:nth-child(2) {
     margin-right: 1rem;
 }
 
-main#cookies > span:nth-child(2){
+main#cookies>span:nth-child(2) {
     font-size: 28px;
     font-weight: 600;
     color: #2A2121;
     margin-bottom: 1rem;
 }
 
-main#cookies > span.tNegrita{
+main#cookies>span.tNegrita {
     margin-bottom: 0.3rem;
     font-weight: 500;
 }
 
-main#cookies > span.txt{
+main#cookies>span.txt {
     margin-bottom: 1rem;
 }
+
 /* Cookies - Final main#cookies */
 
 /* Inicio footer */
@@ -1538,16 +1634,12 @@ footer>div#other-info-footer>span {
     main#login div.or {
         width: 60%;
     }
+
     /*Final main login tablet*/
 
     /*Cookies main tablet*/
-    main#cookies{
+    main#cookies {
         padding: 3rem;
-    }
-
-    /* Profile gallery tablet */
-    main#profile-page > section#profile-gallery>article.post{
-        flex: 25%;
     }
 
     /* Incio footer tablet */
@@ -1566,6 +1658,7 @@ footer>div#other-info-footer>span {
 
     /* Final footer tablet */
 }
+
 /*Final versión tablet*/
 
 /*Versión desktop*/
@@ -1650,32 +1743,42 @@ footer>div#other-info-footer>span {
     /*Final header desktop*/
 
     /*Inicio main#index desktop*/
+
+    .wide {
+        grid-column: span 2;
+    }
+
     main#index>section#galery-index {
         display: grid;
-        gap: 0.1rem;
-        grid-template-columns: repeat(6, 1fr);
-        
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows: 200px;
+        grid-auto-flow: dense;
+        padding: 1rem 2rem;
     }
 
     main#index>section#galery-index>article.post {
-        flex: 0;
         position: relative;
-        margin-bottom: 0.8rem;
-        
     }
 
     main#index>section#galery-index>article.post>div.capa-post {
         display: block;
+        height: 200px;
     }
 
     main#index>section#galery-index>article.post>div.post-info {
         position: absolute;
         width: 100%;
+        height: auto;
     }
 
     main#index>section#galery-index>article.post>picture.obra-arte>img {
-        height: 240px;
-        width: auto;
+        height: 200px;
+        max-width: 100%;
+        width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+        object-fit: cover;
     }
 
     main#index>section#galery-index>article.post>ul.icons-post {
@@ -1766,23 +1869,26 @@ footer>div#other-info-footer>span {
     main#login>div {
         justify-content: flex-start;
     }
+
     /*Final login desktop*/
 
     /*Inicio upload destop*/
-    main.upload > form{
+    main.upload>form {
         width: 622px;
     }
+
     /*Final upload desktop*/
 
     /* Inicio submit desktop */
-    main.submit{
+    main.submit {
         flex-flow: row;
         width: 90%;
         margin-left: 5%;
         justify-content: center;
         align-items: flex-start;
     }
-    main.submit > div#imageContainer{
+
+    main.submit>div#imageContainer {
         border: 1px dashed #E9A431;
         margin-right: 2rem;
         width: auto;
@@ -1790,80 +1896,74 @@ footer>div#other-info-footer>span {
         padding: 2rem;
     }
 
-    main.submit form > button{
+    main.submit form>button {
         margin-bottom: 0;
     }
-    main.submit form div#raya{
+
+    main.submit form div#raya {
         width: 1px;
         border-right: 1px solid #2A2121;
     }
-    main.submit form >div#columns{
+
+    main.submit form>div#columns {
         display: flex;
         flex-flow: row nowrap;
     }
-    main.submit form >div#columns>div#column1 ,main.submit form >div#columns>div#column2 {
+
+    main.submit form>div#columns>div#column1,
+    main.submit form>div#columns>div#column2 {
         width: 49%;
         display: flex;
         flex-flow: column;
         justify-content: center;
     }
+
     /* Final submit desktop */
 
-    /* Profile gallery desktop */
-    main#profile-page > section#profile-gallery>article.post{
-        flex: 20%;
-    }
-
     /*Cookies main desktop*/
-    main#cookies{
+    main#cookies {
         padding: 4rem;
     }
 
     /* Inicio main.post desktop */
-    main.post{
+    main.post {
         flex-flow: row nowrap;
         align-items: flex-start;
-        justify-content: space-around;
-        width: 90%;
-    }
-    main.post>aside{
-        display: flex;
-        flex-flow: column;
-    }
-    main.post>aside>span{
-        font-weight: 500;
-        font-size: 16px;
-    }
-    main.post>aside>div{
-        border: 1px #E9A431 dashed;
-        max-width: 400px;
-    }
-    .splide__slide > img {
-        width: 100%;
-        height: auto;
-    }
-    main.post>aside>div#slider>section{
-        visibility: visible;
-        max-width: 390px;
-        height: auto;
-        margin: 10px;
-    }
-    main.post>aside>div>section#slider img{
-        width: 100%;
-        max-width: 300px;
-        height: 200px;
-        margin: 5px;
-    }
-    main.post>aside>div>section#profile-gallery{
-        display: flex;
-        flex-flow: row wrap;
+        justify-content: center;
     }
 
-    main.post>aside>div>section#profile-gallery img{
-        height: 130px;
-        width: auto;
-        margin: 5px;
+    main.post>section{
+        margin-right: 10rem;
     }
+
+    main.post>aside {
+        display: block;
+        margin-top: 5rem;
+    }
+
+    main.post>aside>section#more-by {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: 120px;
+        grid-auto-flow: dense;
+        padding: 1rem;
+        border: 1px dashed #e89c31;
+        width: 300px;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    main.post>aside>section#more-by>article>picture>img {
+        cursor: pointer;
+        height: 120px;
+        max-width: 100%;
+        width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+        object-fit: cover;
+    }
+
     /* Final main.post desktop */
 
     /* Inicio footer desktop */

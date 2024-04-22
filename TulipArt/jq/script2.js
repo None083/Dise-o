@@ -6,9 +6,9 @@ $(document).ready(function () {
         }
     );
 
-    $("joinOrLogin>img").on(
+    $("div#joinOrLogin>img#equisjoin").on(
         "click", function () {
-            $("joinOrLogin").fadeOut(100);
+            $("div#joinOrLogin").fadeOut(100);
         }
     );
 
