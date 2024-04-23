@@ -742,6 +742,7 @@ div#contenedor2{
     background-color: #EEECE8;
     height:100vh;
     width: 100%;
+    color: #2A2121;
 }
 header.submit{
     background-color: #EEECE8;
@@ -773,10 +774,11 @@ main.submit >form{
     max-width: 500px;
 }
 
-main.submit > form > div.checkbox {
+main.submit > form div.checkbox {
     display: flex;
     flex-flow: row;
     margin: 10px 0;
+    align-items: center;
 }
 
 main.submit > div#imageContainer{
@@ -787,26 +789,59 @@ main.submit > div#imageContainer>img{
 width: 100%;
 height: auto;
 }
+
 main.submit  form input[type="checkbox"]{
     display: none;
 }
-main.submit  form input[type="checkbox"] + label{
-    display: flex;
-    flex-flow: row;
+
+/* Estilo para el checkbox */
+.checkbox input[type="checkbox"] {
+    display: none; /* Ocultar el checkbox predeterminado */
 }
-main.submit  form input[type="checkbox"] + label > div{
-    min-width: 22px;
-    min-height: 22px;
-    margin-right: 5px;
-    background-image: url(https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/square.svg);
-    background-image: no-repeat;
-    margin-right: 1rem;
-    background-size: cover;
+
+/* Estilo para la etiqueta del checkbox */
+.checkbox label {
+    position: relative;
+    padding-left: 30px; /* Espacio para el nuevo checkbox personalizado */
+    cursor: pointer;
+    line-height: 20px; /* Alinear verticalmente el texto con el checkbox */
 }
-main.submit  form input[type="checkbox"]:checked + label > div{
-    background-image: url(https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/square-checked.svg);
-    background-repeat: no-repeat;
+
+/* Estilo para el nuevo checkbox personalizado */
+.checkbox label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px; /* Tamaño del checkbox personalizado */
+    height: 15px;
+    border: 2px solid #2A2121; /* Color del borde marrón predeterminado */
+    background-color: #EEECE8; /* Color de fondo normal */
+    border-radius: 3px;
 }
+
+/* Estilo para el check (tick) dentro del checkbox personalizado */
+.checkbox label:after {
+    content: '\2713'; /* Código del checkmark Unicode */
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    font-size: 33px; /* Tamaño del checkmark */
+    color: transparent; /* Hacer el checkmark transparente por defecto */
+    transition: all 0.2s; /* Agregar transición suave */
+}
+
+/* Estilo para el nuevo checkbox personalizado cuando está marcado */
+.checkbox input[type="checkbox"]:checked + label:before {
+    border-color: #E9A431; /* Cambiar color del borde cuando está marcado */
+}
+
+/* Estilo para el checkmark cuando está marcado */
+.checkbox input[type="checkbox"]:checked + label:after {
+    color: #E9A431; /* Cambiar color del checkmark cuando está marcado */
+    transform: scale(1); /* Hacer visible el checkmark */
+}
+
 div#raya{
     width: 100%;
     border-top: 1px solid #2A2121;
@@ -1873,24 +1908,6 @@ footer>div#other-info-footer>span {
 
     main.submit form>button {
         margin-bottom: 0;
-    }
-
-    main.submit form div#raya {
-        width: 1px;
-        border-right: 1px solid #2A2121;
-    }
-
-    main.submit form>div#columns {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-
-    main.submit form>div#columns>div#column1,
-    main.submit form>div#columns>div#column2 {
-        width: 49%;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
     }
 
     /* Final submit desktop */
