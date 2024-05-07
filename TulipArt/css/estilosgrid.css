@@ -635,22 +635,49 @@ main#login form input[type="checkbox"] {
     display: none;
 }
 
-main#login form input[type="checkbox"]+label {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
+/* Estilo para la etiqueta del checkbox */
+.checkbox1 label {
+    position: relative;
+    padding-left: 30px; /* Espacio para el nuevo checkbox personalizado */
+    cursor: pointer;
+    line-height: 20px; /* Alinear verticalmente el texto con el checkbox */
 }
 
-main#login form input[type="checkbox"]+label>div {
-    width: 18px;
-    height: 18px;
-    margin-right: 5px;
-    background-image: url(../imagenes/icons/square-unchecked.svg);
+/* Estilo para el nuevo checkbox personalizado */
+.checkbox1 label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px; /* Tamaño del checkbox personalizado */
+    height: 15px;
+    border: 2px solid #2A2121; /* Color del borde marrón predeterminado */
+    background-color: #EEECE8; /* Color de fondo normal */
+    border-radius: 3px;
 }
 
-main#login form input[type="checkbox"]:checked+label>div {
-    background-image: url(../imagenes/icons/square-checked.svg);
+/* Estilo para el check (tick) dentro del checkbox personalizado */
+.checkbox1 label:after {
+    content: '\2713'; /* Código del checkmark Unicode */
+    position: absolute;
+    left: 0;
+    bottom: 21px;
+    font-size: 33px; /* Tamaño del checkmark */
+    color: transparent; /* Hacer el checkmark transparente por defecto */
+    transition: all 0.2s; /* Agregar transición suave */
 }
+
+/* Estilo para el nuevo checkbox personalizado cuando está marcado */
+.checkbox1 input[type="checkbox"]:checked + label:before {
+    border-color: #E9A431; /* Cambiar color del borde cuando está marcado */
+}
+
+/* Estilo para el checkmark cuando está marcado */
+.checkbox1 input[type="checkbox"]:checked + label:after {
+    color: #E9A431; /* Cambiar color del checkmark cuando está marcado */
+    transform: scale(1); /* Hacer visible el checkmark */
+}
+
 
 main#login form>div#checkform {
     display: flex;
@@ -1902,7 +1929,7 @@ footer>div#other-info-footer>span {
         border: 1px dashed #E9A431;
         margin-right: 2rem;
         width: auto;
-        height: 446px;
+        height: 590px;
         padding: 2rem;
     }
 
