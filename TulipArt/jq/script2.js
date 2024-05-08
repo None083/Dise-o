@@ -11,8 +11,4 @@ $(document).ready(function () {
             $("div#joinOrLogin").fadeOut(100);
         }
     );
-
-    $('.demo').slick();
-
-
 })

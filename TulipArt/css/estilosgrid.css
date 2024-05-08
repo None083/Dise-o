@@ -524,7 +524,7 @@ main#index>section#galery-index>article.post>ul.icons-post>li {
 /* Index - Final main#index página inicial */
 
 /* Login - Inicio main#login */
-div#contenedor-login{
+div#contenedor-login {
     font-family: "Kumbh Sans", sans-serif;
     height: 100vh;
     width: 100%;
@@ -546,12 +546,12 @@ header.white>a {
     margin-bottom: 1rem;
 }
 
-header.white>a>picture{
+header.white>a>picture {
     width: 36px;
     height: 36px;
 }
 
-header.white>a>picture>img{
+header.white>a>picture>img {
     width: 100%;
     height: auto;
 }
@@ -584,7 +584,7 @@ main#login form {
     width: 80%;
 }
 
-main#login form>div.titulo{
+main#login form>div.titulo {
     margin-bottom: 1rem;
 }
 
@@ -638,9 +638,11 @@ main#login form input[type="checkbox"] {
 /* Estilo para la etiqueta del checkbox */
 .checkbox1 label {
     position: relative;
-    padding-left: 30px; /* Espacio para el nuevo checkbox personalizado */
+    padding-left: 30px;
+    /* Espacio para el nuevo checkbox personalizado */
     cursor: pointer;
-    line-height: 20px; /* Alinear verticalmente el texto con el checkbox */
+    line-height: 20px;
+    /* Alinear verticalmente el texto con el checkbox */
 }
 
 /* Estilo para el nuevo checkbox personalizado */
@@ -649,33 +651,43 @@ main#login form input[type="checkbox"] {
     position: absolute;
     top: 0;
     left: 0;
-    width: 15px; /* Tamaño del checkbox personalizado */
+    width: 15px;
+    /* Tamaño del checkbox personalizado */
     height: 15px;
-    border: 2px solid #2A2121; /* Color del borde marrón predeterminado */
-    background-color: #EEECE8; /* Color de fondo normal */
+    border: 2px solid #2A2121;
+    /* Color del borde marrón predeterminado */
+    background-color: #EEECE8;
+    /* Color de fondo normal */
     border-radius: 3px;
 }
 
 /* Estilo para el check (tick) dentro del checkbox personalizado */
 .checkbox1 label:after {
-    content: '\2713'; /* Código del checkmark Unicode */
+    content: '\2713';
+    /* Código del checkmark Unicode */
     position: absolute;
     left: 0;
     bottom: 21px;
-    font-size: 33px; /* Tamaño del checkmark */
-    color: transparent; /* Hacer el checkmark transparente por defecto */
-    transition: all 0.2s; /* Agregar transición suave */
+    font-size: 33px;
+    /* Tamaño del checkmark */
+    color: transparent;
+    /* Hacer el checkmark transparente por defecto */
+    transition: all 0.2s;
+    /* Agregar transición suave */
 }
 
 /* Estilo para el nuevo checkbox personalizado cuando está marcado */
-.checkbox1 input[type="checkbox"]:checked + label:before {
-    border-color: #E9A431; /* Cambiar color del borde cuando está marcado */
+.checkbox1 input[type="checkbox"]:checked+label:before {
+    border-color: #E9A431;
+    /* Cambiar color del borde cuando está marcado */
 }
 
 /* Estilo para el checkmark cuando está marcado */
-.checkbox1 input[type="checkbox"]:checked + label:after {
-    color: #E9A431; /* Cambiar color del checkmark cuando está marcado */
-    transform: scale(1); /* Hacer visible el checkmark */
+.checkbox1 input[type="checkbox"]:checked+label:after {
+    color: #E9A431;
+    /* Cambiar color del checkmark cuando está marcado */
+    transform: scale(1);
+    /* Hacer visible el checkmark */
 }
 
 
@@ -693,9 +705,11 @@ main#login form>div#checkform>a {
 main#login form>div#checkform>label {
     text-align: left;
 }
+
 main#login form>button {
     height: 40px;
 }
+
 section.contactWith {
     width: 80%;
 }
@@ -764,14 +778,15 @@ main#login div.or {
 }
 
 /* Submit - Inicio main.submit */
-div#contenedor2{
+div#contenedor2 {
     font-family: "Kumbh Sans", sans-serif;
     background-color: #EEECE8;
-    height:100vh;
+    height: 100vh;
     width: 100%;
     color: #2A2121;
 }
-header.submit{
+
+header.submit {
     background-color: #EEECE8;
     display: flex;
     flex-flow: row;
@@ -782,11 +797,13 @@ header.submit{
     box-shadow: 0px 15px 5px -15px #2A2121;
 
 }
-header.submit >span.h1 {
+
+header.submit>span.h1 {
     font-size: 28px;
     font-weight: 700;
     color: #2A2121;
 }
+
 main.submit {
     display: flex;
     flex-flow: column nowrap;
@@ -794,44 +811,49 @@ main.submit {
     align-items: center;
 
 }
-main.submit >form{
+
+main.submit>form {
     display: flex;
     flex-flow: column;
     width: 80%;
     max-width: 500px;
 }
 
-main.submit > form div.checkbox {
+main.submit>form div.checkbox {
     display: flex;
     flex-flow: row;
     margin: 10px 0;
     align-items: center;
 }
 
-main.submit > div#imageContainer{
-width: 80%;
-max-width: 500px;
-}
-main.submit > div#imageContainer>img{
-width: 100%;
-height: auto;
+main.submit>div#imageContainer {
+    width: 80%;
+    max-width: 500px;
 }
 
-main.submit  form input[type="checkbox"]{
+main.submit>div#imageContainer>img {
+    width: 100%;
+    height: auto;
+}
+
+main.submit form input[type="checkbox"] {
     display: none;
 }
 
 /* Estilo para el checkbox */
 .checkbox input[type="checkbox"] {
-    display: none; /* Ocultar el checkbox predeterminado */
+    display: none;
+    /* Ocultar el checkbox predeterminado */
 }
 
 /* Estilo para la etiqueta del checkbox */
 .checkbox label {
     position: relative;
-    padding-left: 30px; /* Espacio para el nuevo checkbox personalizado */
+    padding-left: 30px;
+    /* Espacio para el nuevo checkbox personalizado */
     cursor: pointer;
-    line-height: 20px; /* Alinear verticalmente el texto con el checkbox */
+    line-height: 20px;
+    /* Alinear verticalmente el texto con el checkbox */
 }
 
 /* Estilo para el nuevo checkbox personalizado */
@@ -840,82 +862,97 @@ main.submit  form input[type="checkbox"]{
     position: absolute;
     top: 0;
     left: 0;
-    width: 15px; /* Tamaño del checkbox personalizado */
+    width: 15px;
+    /* Tamaño del checkbox personalizado */
     height: 15px;
-    border: 2px solid #2A2121; /* Color del borde marrón predeterminado */
-    background-color: #EEECE8; /* Color de fondo normal */
+    border: 2px solid #2A2121;
+    /* Color del borde marrón predeterminado */
+    background-color: #EEECE8;
+    /* Color de fondo normal */
     border-radius: 3px;
 }
 
 /* Estilo para el check (tick) dentro del checkbox personalizado */
 .checkbox label:after {
-    content: '\2713'; /* Código del checkmark Unicode */
+    content: '\2713';
+    /* Código del checkmark Unicode */
     position: absolute;
     left: 0;
     bottom: 4px;
-    font-size: 33px; /* Tamaño del checkmark */
-    color: transparent; /* Hacer el checkmark transparente por defecto */
-    transition: all 0.2s; /* Agregar transición suave */
+    font-size: 33px;
+    /* Tamaño del checkmark */
+    color: transparent;
+    /* Hacer el checkmark transparente por defecto */
+    transition: all 0.2s;
+    /* Agregar transición suave */
 }
 
 /* Estilo para el nuevo checkbox personalizado cuando está marcado */
-.checkbox input[type="checkbox"]:checked + label:before {
-    border-color: #E9A431; /* Cambiar color del borde cuando está marcado */
+.checkbox input[type="checkbox"]:checked+label:before {
+    border-color: #E9A431;
+    /* Cambiar color del borde cuando está marcado */
 }
 
 /* Estilo para el checkmark cuando está marcado */
-.checkbox input[type="checkbox"]:checked + label:after {
-    color: #E9A431; /* Cambiar color del checkmark cuando está marcado */
-    transform: scale(1); /* Hacer visible el checkmark */
+.checkbox input[type="checkbox"]:checked+label:after {
+    color: #E9A431;
+    /* Cambiar color del checkmark cuando está marcado */
+    transform: scale(1);
+    /* Hacer visible el checkmark */
 }
 
-div#raya{
+div#raya {
     width: 100%;
     border-top: 1px solid #2A2121;
 }
-main.submit form  label{
+
+main.submit form label {
     font-weight: bold;
     margin: 5px 0;
 }
-main.submit form  input{
+
+main.submit form input {
     margin: 10px 0;
 }
-main.submit  form  input[type="text"]{
+
+main.submit form input[type="text"] {
     height: 40px;
     background-color: #E1DBD5;
     border: #2A2121 1px solid;
     border-radius: 3px;
 }
-main.submit form  input[type="text"]:focus{
+
+main.submit form input[type="text"]:focus {
     border: #E9A431 1px solid;
-    outline: none; 
+    outline: none;
 }
-main.submit  form  textarea{
+
+main.submit form textarea {
     background-color: #E1DBD5;
     border: #2A2121 1px solid;
     border-radius: 3px;
     margin: 10px 0;
 }
 
-main.submit form >div#columns>div#column1{
+main.submit form>div#columns>div#column1 {
     margin-bottom: 1rem;
 }
 
-main.submit form >div#columns>div#column1 label{
+main.submit form>div#columns>div#column1 label {
     font-weight: 400;
     font-size: 12px;
 }
 
-main.submit form >div#columns>div#column2{
+main.submit form>div#columns>div#column2 {
     margin-top: 1rem;
 }
 
-main.submit form >div#columns>div#column2 label{
+main.submit form>div#columns>div#column2 label {
     font-weight: 300;
     font-size: 10px;
 }
 
-main.submit  form > button{
+main.submit form>button {
     margin-bottom: 4rem;
     margin-top: 2rem;
     height: 40px;
@@ -1116,7 +1153,7 @@ main.post>section.post>div#comments>div#writeComments>div>div>textarea {
 main.post>section.post>div#comments>div#writeComments>div>div>textarea::placeholder {
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 200;
-    
+
 }
 
 main.post>section.post>div#comments>div#writeComments>div>div>div {
@@ -1266,6 +1303,94 @@ main.post>section.post>div#comments>div#answer>div.icons>img {
 
 main.post>section.post>div#comments>div#answer>div.icons>img.corazon {
     margin-left: 10px;
+}
+
+/* slider-wrapper */
+.slider-wrapper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    min-height: 300px;
+    background: #ddd;
+    overflow: hidden;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+}
+
+.slider-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* slider-img */
+ul.slider-img {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 0.5s;
+}
+
+ul.slider-img li {
+    flex: 1 0 100%;
+}
+
+ul.slider-img li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* slider-arrow */
+ul.slider-arrow {
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+ul.slider-arrow li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 15px;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+ul.slider-arrow li:hover {
+    opacity: 1;
+}
+
+/* slider-dot */
+.slider-dot {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.slider-dot li {
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 0.6rem;
+    opacity: 0.4;
+}
+
+.slider-dot li.active {
+    opacity: 1;
 }
 
 /* Post - Final main.post */
@@ -1951,7 +2076,7 @@ footer>div#other-info-footer>span {
         justify-content: center;
     }
 
-    main.post>section{
+    main.post>section {
         margin-right: 10rem;
     }
 
