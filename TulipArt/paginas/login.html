@@ -9,10 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
     <title>TulipArt - Login</title>
     <link rel="icon" type="image/jpg" href="../imagenes/tulips/LogoTulipArtPlanoIcon.webp">
-    <link rel="stylesheet" type="text/css" href="../css/estilosgrid.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script src="../jq/jquery-3.7.1.min.js"></script>
+	<script src="../jq/jquery.animate-colors-min.js"></script>
+	<script src="../jq/script-efectos.js"></script>
 </head>
 
-<body>
+<body class="dsk-orange">
     <div id="contenedor-login" class="dsk-orange">
         <header class="white">
             <h1>TulipArt, Galería de arte</h1>
@@ -38,10 +41,10 @@
                     </div>
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" required>
-                    <span class="smaller warning">That was the wrong username. Please try again.</span>
+                    <span id="wrong-username" class="smaller warning">That was the wrong username. Please try again.</span>
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
-                    <span class="smaller warning">That was the wrong password. Please try again.</span>
+                    <span id="wrong-password" class="smaller warning">That was the wrong password. Please try again.</span>
                     <div id="checkform">
                         <div class="checkbox1">
                             <input type="checkbox" class="checkSubmit" id="check1" checked>

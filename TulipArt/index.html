@@ -9,21 +9,22 @@
 	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
 	<title>TulipArt - Inicio</title>
 	<link rel="icon" type="image/jpg"
-		href="https://imagenes-tulipart.s3.amazonaws.com/imagenes/tulips/LogoTulipArtPlanoIcon.webp">
-	<link rel="stylesheet" type="text/css" href="css/estilosgrid.css">
+		href="imagenes/tulips/LogoTulipArtPlanoIcon.webp">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<script src="jq/jquery-3.7.1.min.js"></script>
-	<script src="jq/script2.js"></script>
-	<script src="jq/script.js"></script>
+	<script src="jq/jquery.animate-colors-min.js"></script>
+	<script src="jq/script-efectos.js"></script>
+	<script src="jq/script-video.js"></script>
 </head>
 
 <body>
 	<div id="contenedor">
-		<header>
+		<header class="fixed">
 			<h1>TulipArt, Galería de arte</h1>
 			<nav id="menu-principal" aria-label="menu-principal">
 				<label for="hamburguesa">
 					<img id="menu-hamb"
-						src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icons-blanco/align-justify.svg"
+						src="imagenes/icons/icons-blanco/align-justify.svg"
 						alt="icono menu principal">
 				</label>
 				<ul id="menu-desplegado">
@@ -43,62 +44,62 @@
 			</nav>
 			<a id="logo" href="index.html">
 				<img id="tulip"
-					src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/tulips/LogoTulipArtPlanoIcon.webp"
+					src="imagenes/tulips/LogoTulipArtPlanoIcon.webp"
 					alt="Logo TulipArt">
 			</a>
 			<a id="nombreWeb" href="index.html">TulipArt</a>
 			<nav id="menu-iconos" aria-label="menu-iconos">
 				<div id="search">
 					<img id="lupa-blanca"
-						src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icons-blanco/search.svg"
+						src="imagenes/icons/icons-blanco/search.svg"
 						alt="Icon search">
-					<img id="lupa-negra" src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/search.svg"
+					<img id="lupa-negra" src="imagenes/icons/search.svg"
 						alt="Icon search">
 					<input type="text" name="buscar" id="buscar" placeholder="Search">
 				</div>
 				<a href="paginas/profile.html" id="profile">
-					<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icons-blanco/user.svg"
+					<img src="imagenes/icons/icons-blanco/user.svg"
 						alt="Icon user">
 					<span>Profile</span>
 				</a>
 				<a href="#" id="messages-header">
-					<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icons-blanco/message-square.svg"
+					<img src="imagenes/icons/icons-blanco/message-square.svg"
 						alt="Icon messages">
 					<span>Messages</span>
 				</a>
 				<a href="#" id="alerts-header">
-					<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icons-blanco/bell.svg"
+					<img src="imagenes/icons/icons-blanco/bell.svg"
 						alt="Icon alerts">
 					<span>Alerts</span>
 				</a>
 				<a href="paginas/upload.html" id="submit-header">
-					<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icons-blanco/plus.svg"
+					<img src="imagenes/icons/icons-blanco/plus.svg"
 						alt="Submit art">
 					<span>Submit Art</span>
 				</a>
 			</nav>
 			<nav id="menu-adicional" aria-label="menu-adicional">
 				<img id="menu-albondigas"
-					src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icons-blanco/more-horizontal.svg"
+					src="imagenes/icons/icons-blanco/more-horizontal.svg"
 					alt="Icon adittional menu">
 				<ul id="menu-iconos-adicional">
 					<li>
 						<a href="#">
-							<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-square.svg"
+							<img src="imagenes/icons/message-square.svg"
 								alt="Icon messages">
 							<span>Messages</span>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/bell.svg"
+							<img src="imagenes/icons/bell.svg"
 								alt="Icon alerts">
 							<span>Alerts</span>
 						</a>
 					</li>
 					<li>
 						<a href="paginas/upload.html">
-							<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/plus.svg"
+							<img src="imagenes/icons/plus.svg"
 								alt="Icon submit">
 							<span>Post</span>
 						</a>
@@ -106,11 +107,11 @@
 				</ul>
 			</nav>
 			<nav id="capa-buscador" aria-label="capa-buscador">
-				<img id="equis" src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/x.svg" alt="Icon close">
+				<img id="equis" src="imagenes/icons/x.svg" alt="Icon close">
 				<div>
 					<input type="text" name="buscador" id="buscador" placeholder="Search">
 					<a href="index.html"><img id="lupa-negra-buscador"
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/search.svg"
+							src="imagenes/icons/search.svg"
 							alt="Icon search"></a>
 				</div>
 				<span>SUGGESTED TAGS</span>
@@ -226,24 +227,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Best masterpiece in the world</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art3_1.webp"
+							src="imagenes/arte/art3_1.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -268,24 +269,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art1.webp"
+							src="imagenes/arte/art1.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -310,24 +311,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art2_1.webp"
+							src="imagenes/arte/art2_1.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -352,24 +353,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Best masterpiece in the world</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra5.webp"
+							src="imagenes/arte/obra5.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -394,24 +395,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra6.webp"
+							src="imagenes/arte/obra6.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -436,24 +437,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/Frame.webp"
+							src="imagenes/arte/Frame.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -478,24 +479,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">The best</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra1.webp"
+							src="imagenes/arte/obra1.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -520,24 +521,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art3-1.webp"
+							src="imagenes/arte/art3-1.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -562,24 +563,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra7.webp"
+							src="imagenes/arte/obra7.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -604,24 +605,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Best masterpiece in the world</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra3.webp"
+							src="imagenes/arte/obra3.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -646,24 +647,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra4.webp"
+							src="imagenes/arte/obra4.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -688,24 +689,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art3_1.webp"
+							src="imagenes/arte/art3_1.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -730,24 +731,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art1.webp"
+							src="imagenes/arte/art1.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -772,24 +773,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">It's time</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra1.webp"
+							src="imagenes/arte/obra1.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -814,24 +815,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Best masterpiece in the world</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra5.webp"
+							src="imagenes/arte/obra5.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -856,24 +857,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra6.webp"
+							src="imagenes/arte/obra6.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -898,24 +899,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/Frame.webp"
+							src="imagenes/arte/Frame.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -940,24 +941,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">The best</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra1.webp"
+							src="imagenes/arte/obra1.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -982,24 +983,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art3-1.webp"
+							src="imagenes/arte/art3-1.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1024,24 +1025,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra7.webp"
+							src="imagenes/arte/obra7.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1066,24 +1067,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Best masterpiece in the world</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra3.webp"
+							src="imagenes/arte/obra3.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1108,24 +1109,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra4.webp"
+							src="imagenes/arte/obra4.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1150,24 +1151,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art3_1.webp"
+							src="imagenes/arte/art3_1.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1192,24 +1193,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art1.webp"
+							src="imagenes/arte/art1.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1234,24 +1235,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">It's time</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra1.webp"
+							src="imagenes/arte/obra1.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1276,24 +1277,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Best masterpiece in the world</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra5.webp"
+							src="imagenes/arte/obra5.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1318,24 +1319,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra6.webp"
+							src="imagenes/arte/obra6.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1360,24 +1361,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/Frame.webp"
+							src="imagenes/arte/Frame.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1402,24 +1403,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">The best</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra1.webp"
+							src="imagenes/arte/obra1.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1444,24 +1445,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art3-1.webp"
+							src="imagenes/arte/art3-1.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1486,24 +1487,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra7.webp"
+							src="imagenes/arte/obra7.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1528,24 +1529,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Best masterpiece in the world</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra3.webp"
+							src="imagenes/arte/obra3.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1570,24 +1571,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra4.webp"
+							src="imagenes/arte/obra4.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1612,24 +1613,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art3_1.webp"
+							src="imagenes/arte/art3_1.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1654,24 +1655,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art1.webp"
+							src="imagenes/arte/art1.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1696,24 +1697,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">It's time</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra1.webp"
+							src="imagenes/arte/obra1.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1738,24 +1739,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Best masterpiece in the world</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art3_1.webp"
+							src="imagenes/arte/art3_1.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1780,24 +1781,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/ranita.webp"
+								src="imagenes/users/ranita.webp"
 								alt="Icon user ranita"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">This piece is better than the...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Ranita</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art1.webp"
+							src="imagenes/arte/art1.webp"
 							alt="Obra de arte art1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1822,24 +1823,24 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/baby666.webp"
+								src="imagenes/users/baby666.webp"
 								alt="Icon user baby666"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Time to try to get up and ha...</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Baby666</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/art2_1.webp"
+							src="imagenes/arte/art2_1.webp"
 							alt="Obra de arte art2_1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
@@ -1864,47 +1865,48 @@
 					</nav>
 					<div class="post-info">
 						<a href="paginas/profile.html"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/users/gatito.webp"
+								src="imagenes/users/gatito.webp"
 								alt="Icon user gatito"></a>
 						<div class="titulo-user">
 							<a href="paginas/post.html"><span class="titulo-obra">Best masterpiece in the world</span></a>
 							<a href="paginas/profile.html"><span class="nombre-user">By Gatito</span></a>
 						</div>
 						<span class="boton-seguir">Follow</span>
-						<img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Menu Vertical.svg"
+						<img class="icon-albondiga" src="imagenes/icons/MenuVertical.svg"
 							alt="menu-post">
 					</div>
 					<picture class="obra-arte"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/arte/obra5.webp"
+							src="imagenes/arte/obra5.webp"
 							alt="Obra de arte art3-1">
 					</picture>
 					<ul class="icons-post">
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/Favorite.svg"
+						<li><img src="imagenes/icons/Favorite.svg"
 								alt="Icon like"></li>
-						<li><img src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/message-circle.svg"
+						<li><img src="imagenes/icons/message-circle.svg"
 								alt="Icon message post"></li>
 					</ul>
 				</article>
 			</section>
+			<img id="volver-arriba" src="imagenes/icons/flecha-arriba.svg" alt="flecha arriba">
 		</main>
 		<footer>
 			<div id="iconos-footer">
 				<div id="logo-footer">
 					<a href="index.html"><img
-							src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/tulips/LogoTulipArtPlanoIcon.webp"
+							src="imagenes/tulips/LogoTulipArtPlanoIcon.webp"
 							alt="Logo TulipArt">
 					</a>
 					<a href="index.html">TulipArt</a>
 				</div>
 				<ul id="socials">
 					<li><a href="https://www.facebook.com/?locale=es_ES"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icon _circle facebook_.svg"
+								src="imagenes/icons/icon_circlefacebook_.svg"
 								alt="Logo facebook"></a></li>
 					<li><a href="https://twitter.com/?lang=es"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icon _circle twitterbird_.svg"
+								src="imagenes/icons/icon_circletwitterbird_.svg"
 								alt="Logo twitter"></a></li>
 					<li><a href="https://www.instagram.com/"><img
-								src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/icon _circle instagram_.svg"
+								src="imagenes/icons/icon_circleinstagram_.svg"
 								alt="Logo instagram"></a></li>
 				</ul>
 			</div>

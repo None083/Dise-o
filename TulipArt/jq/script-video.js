@@ -15,6 +15,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var fullscreen = document.getElementById('fullscreen');
     var currentTime = document.getElementById('currentTime');
     var totalTime = document.getElementById('totalTime');
+    var equis = document.getElementById('equis-video');
+
+    equis.addEventListener('click', function (event) {
+        video.pause();
+        pause.className = "oculto boton";
+        play.className = "visible boton";
+    }, false);
 
     play.addEventListener('click', function (event) {
         video.play();

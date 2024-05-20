@@ -9,14 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
     <title>TulipArt - Post</title>
     <link rel="icon" type="image/jpg" href="../imagenes/tulips/LogoTulipArtPlanoIcon.webp">
-    <link rel="stylesheet" type="text/css" href="../css/estilosgrid.css">
-    <link rel="stylesheet" href="../slick/slick.css">
-    <link rel="stylesheet" href="../slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <script src="../jq/jquery-3.7.1.min.js"></script>
+	<script src="../jq/jquery.animate-colors-min.js"></script>
+	<script src="../jq/script-efectos.js"></script>
+    <script src="../jq/script-carrusel.js"></script>
 </head>
 
 <body>
     <div id="contenedor">
-        <header>
+        <header class="fixed">
             <h1>TulipArt, Galería de arte</h1>
             <nav id="menu-principal" aria-label="menu-principal">
                 <label for="hamburguesa">
@@ -24,11 +26,11 @@
                         alt="icono menu principal">
                 </label>
                 <ul id="menu-desplegado">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Favourites</a></li>
-                    <li><a href="index.html">Trending</a></li>
-                    <li><a href="index.html">For you</a></li>
-                    <li><a href="index.html">Following</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Favourites</a></li>
+                    <li><a href="../index.html">Trending</a></li>
+                    <li><a href="../index.html">For you</a></li>
+                    <li><a href="../index.html">Following</a></li>
                     <li>
                         <ul id="submenu">
                             <li><a href="cookies.html">Privacy policy</a></li>
@@ -38,10 +40,10 @@
                     </li>
                 </ul>
             </nav>
-            <a id="logo" href="index.html">
+            <a id="logo" href="../index.html">
                 <img id="tulip" src="../imagenes/tulips/LogoTulipArtPlanoIcon.webp" alt="Logo TulipArt">
             </a>
-            <a id="nombreWeb" href="index.html">TulipArt</a>
+            <a id="nombreWeb" href="../index.html">TulipArt</a>
             <nav id="menu-iconos" aria-label="menu-iconos">
                 <div id="search">
                     <img id="lupa-blanca" src="../imagenes/icons/icons-blanco/search.svg" alt="Icon search">
@@ -60,7 +62,7 @@
                     <img src="../imagenes/icons/icons-blanco/bell.svg" alt="Icon alerts">
                     <span>Alerts</span>
                 </a>
-                <a href="submit.html" id="submit-header">
+                <a href="upload.html" id="submit-header">
                     <img src="../imagenes/icons/icons-blanco/plus.svg" alt="Submit art">
                     <span>Submit Art</span>
                 </a>
@@ -93,7 +95,7 @@
                 <img id="equis" src="../imagenes/icons/x.svg" alt="Icon close">
                 <div>
                     <input type="text" name="buscador" id="buscador" placeholder="Search">
-                    <a href="index.html"><img id="lupa-negra-buscador" src="../imagenes/icons/search.svg"
+                    <a href="../index.html"><img id="lupa-negra-buscador" src="../imagenes/icons/search.svg"
                             alt="Icon search"></a>
                 </div>
                 <span>SUGGESTED TAGS</span>
@@ -109,7 +111,7 @@
         <main class="post">
             <section class="post">
                 <div id="user">
-                    <a href="index.html"><img src="../imagenes/users/gatitoPerfil.webp" alt="Perfil usuario">
+                    <a href="../index.html"><img src="../imagenes/users/gatitoPerfil.webp" alt="Perfil usuario">
                     </a>
                     <div class="nombre">
                         <a href="#">
@@ -125,7 +127,8 @@
                 <img id="image-post" src="../imagenes/arte/obra-submit1.webp" alt="Obra de arte">
                 <div id="option">
                     <div id="izq">
-                        <img class="corazon" src="../imagenes/icons/message-circle.svg" alt="icono">
+                        <img class="corazon" src="../imagenes/icons/Favorite.svg" alt="icono">
+                        <img class="message" src="../imagenes/icons/message-circle.svg" alt="icono">
                         <img class="menu" src="../imagenes/icons/MenuVertical.svg" alt="icono">
                     </div>
                     <div id="der">
@@ -254,13 +257,14 @@
                     </ul>
                 </div>
             </aside>
+            <img id="volver-arriba" src="../imagenes/icons/flecha-arriba.svg" alt="flecha arriba">
         </main>
         <footer>
             <div id="iconos-footer">
                 <div id="logo-footer">
-                    <a href="index.html"><img src="../imagenes/tulips/LogoTulipArtPlanoIcon.webp" alt="Logo TulipArt">
+                    <a href="../index.html"><img src="../imagenes/tulips/LogoTulipArtPlanoIcon.webp" alt="Logo TulipArt">
                     </a>
-                    <a href="index.html">TulipArt</a>
+                    <a href="../index.html">TulipArt</a>
                 </div>
                 <ul id="socials">
                     <li><a href="https://www.facebook.com/?locale=es_ES"><img
@@ -290,8 +294,6 @@
             </div>
         </footer>
     </div>
-    <script src="../jq/jquery-3.7.1.min.js"></script>
-    <script src="../jq/script-carrusel.js"></script>
 </body>
 
 </html>

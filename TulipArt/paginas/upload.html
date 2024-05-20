@@ -11,6 +11,16 @@
     <link rel="icon" type="image/jpg"
         href="https://imagenes-tulipart.s3.amazonaws.com/imagenes/tulips/LogoTulipArtPlanoIcon.webp">
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="../assets/js/jquery.knob.js"></script>
+	<script src="../assets/js/jquery.ui.widget.js"></script>
+	<script src="../assets/js/jquery.iframe-transport.js"></script>
+	<script src="../assets/js/jquery.fileupload.js"></script>
+	<script src="../assets/js/script.js"></script>
+    <script src="http://cdn.tutorialzine.com/misc/enhance/v1.js" async></script>
+
 </head>
 
 <body>
@@ -18,22 +28,27 @@
         <header class="submit">
             <h1>TulipArt, Galería de arte</h1>
             <span class="h1">Submit art</span>
-            <a href="../index.html">
+            <a href="javascript:history.go(-1)">
                 <img alt="Icono x" src="https://imagenes-tulipart.s3.amazonaws.com/imagenes/icons/x.svg">
             </a>
         </header>
         <main class="upload">
-            <form action="submit.html">
+            <form action="submit.html" id="upload">
                 <div id="tulipanes-upload">
                     <img src="../imagenes/tulips/tulip1.webp" alt="Lineart de tulipán">
                     <img src="../imagenes/tulips/tulip2.webp" alt="Color plano de tulipán">
                     <img src="../imagenes/tulips/tulip3.webp" alt="Color y detalles de tulipán">
                 </div>
-                <span>Let's water those tulips witch a fresh JPEG, PNG or GIF</span>
+                <span>Let's water those tulips with a fresh JPEG, PNG or GIF</span>
+                <div id="drop" >
+                    <div id="drop-here">Drop here your art</div>
+                    <ul>
+                        <!-- The file uploads will be shown here -->
+                    </ul>
+                </div>
                 <button type="submit">Upload your Art</button>
             </form>
         </main>
     </div>
 </body>
-
 </html>
