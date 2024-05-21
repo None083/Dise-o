@@ -106,6 +106,10 @@ header>nav#menu-iconos>a>img {
     margin-left: 0.75rem;
 }
 
+header>nav#menu-iconos>div#search {
+    cursor: pointer;
+}
+
 header>nav#menu-iconos>div#search>img#lupa-negra {
     display: none;
 }
@@ -150,6 +154,7 @@ header>nav#menu-adicional>ul#menu-iconos-adicional {
     padding: 0.5rem 1rem;
     border-radius: 0 0 10px 10px;
     box-shadow: 0.1px 0.1px 8px #2A2121;
+    z-index: 100000;
     display: none;
 }
 
@@ -180,7 +185,7 @@ header>nav#capa-buscador {
     flex-flow: column;
     align-items: center;
     padding-top: 6.5rem;
-    display: none;
+    /*display: none;*/
 }
 
 header>nav#capa-buscador>* {
@@ -860,6 +865,7 @@ main.upload>form>div#drop{
     height: 150px;
     border: 1px dashed #E9A431;
     margin-top: 0.5rem;
+    display: none;
 }
 
 main.upload>form>div#drop>div#drop-here{
@@ -1711,7 +1717,7 @@ main#profile-page>section#profile-gallery>article.post>div.post-info>img {
     cursor: pointer;
 }
 
-main#profile-page>section#profile-gallery>article.post>picture.obra-arte>img {
+main#profile-page>section#profile-gallery>article.post>a>picture.obra-arte>img {
     cursor: pointer;
     height: 150px;
     height: 200px;
@@ -2194,6 +2200,10 @@ footer>div#other-info-footer>span {
     /*Inicio upload desktop*/
     main.upload>form {
         width: 622px;
+    }
+
+    main.upload>form>div#drop{
+        display: block;
     }
 
     /*Final upload desktop*/
