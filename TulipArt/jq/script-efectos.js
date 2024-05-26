@@ -65,6 +65,16 @@ $(document).ready(function () {
 
     // Fin header
 
+    $("span#foryou").click(function () {
+        $(this).addClass("borderbottom");
+        $("#following").removeClass("borderbottom");
+    });
+
+    $("span#following").click(function () {
+        $(this).addClass("borderbottom");
+        $("#foryou").removeClass("borderbottom");
+    });
+
     // Hover sobre imagenes del index y profile, modo escritorio
     $(window).resize(function () {
         if ($(window).width() > 1024) {
@@ -77,6 +87,7 @@ $(document).ready(function () {
                 mouseleave: function () {
                     $(this).children("div.capa-post").stop().fadeOut();
                     $(this).children("div.post-info, ul.icons-post").stop().fadeOut();
+                    $(this).children("nav.menu-post").stop().fadeOut();
                 }
             });
 
