@@ -51,7 +51,7 @@ header>a {
     margin: 0 0.3rem;
 }
 
-header>nav#menu-principal>label>img#menu-hamb {
+header>nav#menu-principal>div>img#menu-hamb {
     cursor: pointer;
 }
 
